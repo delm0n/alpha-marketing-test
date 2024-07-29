@@ -1,0 +1,28 @@
+{
+  "name": "alpha-marketing-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "sass": "^1.56.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2"
+  },
+  "scripts": {
+    "watch": "sass --watch styles/scss/main.scss:styles/main.css"
+  },
+  "browserslist": [
+    "last 2 versions",
+    ">0.3%"
+  ],
+  "author": "Zuev Artyom",
+  "license": "ISC"
+}

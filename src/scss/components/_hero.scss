@@ -1,0 +1,25 @@
+.hero {
+  margin: 45px auto 0;
+
+  background: url("../docs/images/lines-bg.webp") no-repeat center;
+  background-position: top 35px center;
+  background-size: contain;
+
+  .page__title {
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(215, 149, 255, 0.5);
+    font-family: Play;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 640px) {
+      font-size: 40px;
+    }
+  }
+
+  .hero__button {
+    margin: 20px auto 0;
+  }
+}
