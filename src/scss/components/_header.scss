@@ -1,14 +1,32 @@
-.header {
-  padding: 16px 16px 0;
+.pagecrm_header {
+  position: sticky;
+  top: 0;
+  margin-top: -83px;
+  transition: all 0.2s;
 
-  a {
-    text-decoration: none;
+  @media (max-width: 640px) {
+    &.scroll {
+      top: -35px;
+    }
   }
 
-  .navbar-mobile {
+  .navbar {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 16px 16px 0;
+
+    @media (min-width: 641px) {
+      background: rgba(29, 1, 65, 0.3);
+      padding: 13px 20px;
+    }
+
+    &.fixed {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      top: 0;
+    }
 
     &__top,
     &__bottom {
@@ -16,93 +34,176 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      width: 100% !important;
       gap: 20px;
     }
 
-    .navbar__logo {
-      cursor: pointer;
-      max-width: 101.5px;
-    }
+    &__bottom {
+      display: none;
 
-    .navbar__phones {
-      a {
-        font-family: "Inter";
-        font-size: 11px;
-        font-weight: 500;
-        line-height: 13.31px;
-        text-align: left;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 1);
+      @media (max-width: 640px) {
+        display: flex;
 
-        &:hover {
-          text-shadow: 0px 0px 4px #d795ff;
+        .navbar__burger {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+
+        .navbar__search {
+          background: linear-gradient(
+            180deg,
+            rgba(46, 51, 90, 0.3) 0%,
+            rgba(28, 27, 51, 0.3) 100%
+          );
+          border: 1px solid;
+          border-radius: 420px;
+          display: flex;
+          align-items: center;
+          height: 25px;
+          padding: 0 10px;
+          gap: 10px;
+          flex-grow: 1;
+
+          &:hover,
+          &:active,
+          &:has(> input:focus),
+          &:has(> input:focus-visible) &:has(> textarea:focus),
+          &:has(> textarea:focus-visible) {
+            transition: 0.2s all;
+            box-shadow: 0px 0px 8px 0px rgba(215, 149, 255, 1);
+          }
+
+          input,
+          svg {
+            display: block;
+          }
+
+          input {
+            border: none;
+            background: transparent;
+            color: #fff;
+            width: 100%;
+          }
         }
       }
     }
 
-    .navbar__burger {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
+    &__top {
+      max-width: 1920px;
+      margin: 0 auto;
+      .navbar__logo {
+        cursor: pointer;
 
-    .navbar__search {
-      background: linear-gradient(
-        180deg,
-        rgba(46, 51, 90, 0.3) 0%,
-        rgba(28, 27, 51, 0.3) 100%
-      );
-      border: 1px solid;
-      border-radius: 420px;
-      display: flex;
-      align-items: center;
-      height: 25px;
-      padding: 0 10px;
-      gap: 10px;
-      flex-grow: 1;
+        max-width: 101.5px;
 
-      &:hover,
-      &:active,
-      &:has(> input:focus),
-      &:has(> input:focus-visible) &:has(> textarea:focus),
-      &:has(> textarea:focus-visible) {
-        transition: 0.2s all;
-        box-shadow: 0px 0px 8px 0px rgba(215, 149, 255, 1);
+        @media (min-width: 641px) {
+          max-width: 160px;
+        }
+
+        @media (min-width: 1200px) {
+          max-width: 220px;
+        }
       }
 
-      input,
-      svg {
-        display: block;
+      .navbar__phones {
+        @media (max-width: 1200px) and (min-width: 641px) {
+          display: none;
+        }
+
+        &-link {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          white-space: nowrap;
+          font-family: Play;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 23.14px;
+          color: rgba(255, 255, 255, 1);
+
+          transition: all 0.4s;
+
+          &:hover {
+            text-shadow: 0px 0px 20px rgba(215, 149, 255, 1),
+              0px 0px 4px rgba(215, 149, 255, 1);
+          }
+
+          @media (max-width: 640px) {
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 13.31px;
+
+            svg {
+              display: none;
+            }
+          }
+        }
       }
 
-      input {
-        border: none;
-        background: transparent;
-        color: #fff;
-        width: 100%;
+      .navbar__wrapper {
+        display: none;
+
+        li {
+          cursor: pointer;
+        }
+
+        @media (min-width: 641px) {
+          display: flex;
+          gap: 24px;
+          align-items: center;
+
+          @media (max-width: 980px) {
+            gap: 5px;
+          }
+
+          a {
+            font-family: Play;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            padding: 12px;
+            color: #e9deff;
+            text-transform: uppercase;
+            transition: all 0.4s;
+
+            @media (max-width: 980px) {
+              font-size: 18px;
+              padding: 8px;
+            }
+
+            &:hover {
+              text-shadow: 0px 0px 20px rgba(215, 149, 255, 1),
+                0px 0px 4px rgba(215, 149, 255, 1);
+            }
+          }
+
+          svg {
+            transition: all 0.4s;
+            &:hover {
+              filter: drop-shadow(0px 0px 24px rgb(241, 219, 255));
+            }
+          }
+        }
+      }
+
+      .navbar__question {
+        @media (max-width: 640px) {
+          display: none;
+        }
+
+        @media (max-width: 980px) {
+          font-size: 18px;
+          padding: 12px;
+        }
       }
     }
   }
 
-  .breadcrumbs {
+  .phones-question-box {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 25px;
-    flex-wrap: wrap;
-
-    a {
-      font-family: "Play";
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 12px;
-      text-align: center;
-      color: #e9deff;
-
-      &:hover {
-        text-shadow: 0px 0px 4px #d795ff;
-      }
-    }
+    gap: 32px;
   }
 }

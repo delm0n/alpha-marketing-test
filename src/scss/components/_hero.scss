@@ -1,9 +1,45 @@
 .hero {
-  margin: 45px auto 0;
+  max-width: 1920px;
+  margin: 0 auto;
 
-  background: url("../docs/images/lines-bg.webp") no-repeat center;
-  background-position: top 35px center;
-  background-size: contain;
+  @media (max-width: 640px) {
+    background: url("../docs/images/lines-bg.webp") no-repeat center;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: 641px) {
+    background: url("../docs/images/lines-bg-2x.webp") no-repeat center;
+    background-position: top -70px center;
+    background-size: cover;
+    margin-bottom: 140px;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 26px 0 46px;
+    flex-wrap: wrap;
+
+    @media (min-width: 641px) {
+      margin: 26px 0 146px;
+    }
+
+    a {
+      font-family: "Play";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      text-align: center;
+      color: #e9deff;
+
+      &:hover {
+        text-shadow: 0px 0px 4px #d795ff;
+      }
+    }
+  }
 
   .page__title {
     font-size: 64px;
@@ -21,5 +57,15 @@
 
   .hero__button {
     margin: 20px auto 0;
+    // background: rgba(177, 149, 255, 0.5);
+
+    @media (min-width: 641px) {
+      margin: 50px auto 0;
+    }
+  }
+
+  .hero__img {
+    max-width: 704.88px;
+    margin: 0 auto;
   }
 }
