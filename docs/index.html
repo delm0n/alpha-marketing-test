@@ -6,6 +6,7 @@
     <title>CRM</title>
 
     <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/fancybox-4.min.css" />
   </head>
   <body class="pagecrm_body">
     <!--  -->
@@ -62,7 +63,7 @@
               </a>
             </div>
     
-            <div class="navbar__question main-button">
+            <a href="#call-form" class="navbar__question main-button fancybox">
               задать вопрос
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +79,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
     
@@ -455,7 +456,7 @@
                 <li>Покупка любого тарифа со скидкой</li>
               </ul>
             </div>
-            <div class="coast-item__button main-button">
+            <a href="#call-form" class="coast-item__button main-button fancybox">
               ЗАКАЗАТЬ
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -471,7 +472,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </a>
           </div>
     
           <div class="coast-item">
@@ -485,7 +486,7 @@
                 <li>Индивидуальная настройка системы</li>
               </ul>
             </div>
-            <div class="coast-item__button main-button">
+            <a href="#call-form" class="coast-item__button main-button fancybox">
               ЗАКАЗАТЬ
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -501,7 +502,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </a>
           </div>
     
           <div class="coast-item">
@@ -519,7 +520,7 @@
                 </li>
               </ul>
             </div>
-            <div class="coast-item__button main-button">
+            <a href="#call-form" class="coast-item__button main-button fancybox">
               ЗАКАЗАТЬ
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -535,18 +536,72 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!--  -->
+
+    <div id="call-form">
+      <div class="form-wrapper">
+        <p class="title-form">Форма для заполнения</p>
+        <p class="subtitle-form">
+          Оставьте свои контактные данные, и мы свяжемся с Вами в течение 20 минут
+        </p>
+    
+        <input
+          class="input-form"
+          type="text"
+          name="phone"
+          autocomplete="off"
+          placeholder="Ваш телефон"
+        />
+    
+        <input
+          class="input-form"
+          type="email"
+          name="email"
+          autocomplete="off"
+          placeholder="@Почта*"
+        />
+    
+        <button disabled="true" class="main-button">ОТПРАВИТЬ ЗАЯВКУ</button>
+    
+        <label>
+          <input type="checkbox" autocomplete="off" />
+          <span class="checkbox__form-label">&nbsp;&nbsp;&nbsp; </span>
+    
+          <span class="policy">
+            Нажимая на кнопку, я соглашаюсь с условиями <br />
+            <b> Политики конфиденциальности</b>
+          </span>
+        </label>
+      </div>
+    </div>
+    
+    <div id="success-form">
+      <div class="form-wrapper">
+        <div class="form-wrapper__img img-wrap">
+          <picture>
+            <source class="lazy" data-src="images/check.webp" type="image/webp" />
+            <img class="lazy" data-src="images/check.png" alt="#" />
+          </picture>
+        </div>
+    
+        <p>Ваша заявка успешно отправлена!</p>
+      </div>
+    </div>
+    <!--  -->
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/fancybox.min.js"></script>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/lazyload.js" async></script>
+    <script src="../scripts/lazyload.min.js" async></script>
+    <script src="../scripts/jquery.maskedinput.min.js" async></script>
   </body>
 </html>
