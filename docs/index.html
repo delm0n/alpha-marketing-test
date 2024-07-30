@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="../style/main.css" />
   </head>
-  <body>
+  <body class="pagecrm_body">
     <!--  -->
     <header class="pagecrm_header">
       <div class="navbar">
@@ -62,7 +62,7 @@
               </a>
             </div>
     
-            <div class="navbar__question question-button">
+            <div class="navbar__question main-button">
               задать вопрос
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,145 +132,415 @@
         </div>
       </div>
     </header>
-    <div class="pagecrm_bg-1">
-      <!--  -->
-      <section class="hero">
-        <div class="container">
-          <div class="breadcrumbs">
-            <a href="">Главная</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="5"
-              height="10"
-              viewBox="0 0 5 10"
-              fill="none"
-            >
-              <path
-                d="M0.990782 9.19354L4.87326 5.32258C4.91935 5.27649 4.95207 5.22657 4.97142 5.17281C4.99078 5.11904 5.0003 5.06144 4.99999 5C4.99999 4.93855 4.99032 4.88095 4.97096 4.82719C4.95161 4.77342 4.91904 4.7235 4.87326 4.67742L0.990782 0.794934C0.883255 0.687407 0.748847 0.633644 0.587557 0.633644C0.426267 0.633644 0.288018 0.691248 0.172811 0.806455C0.0576038 0.921662 9.01284e-10 1.05607 1.22902e-09 1.20968C1.55676e-09 1.36329 0.0576038 1.4977 0.172811 1.61291L3.5599 5L0.172811 8.38709C0.0652843 8.49462 0.0115204 8.62718 0.0115204 8.78478C0.0115204 8.94239 0.0691242 9.07864 0.184331 9.19354C0.299539 9.30875 0.433947 9.36635 0.587557 9.36635C0.741167 9.36635 0.875575 9.30875 0.990782 9.19354Z"
-                fill="white"
-              />
-            </svg>
-            <a href="">Услуги Альфа маркетинг</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="5"
-              height="10"
-              viewBox="0 0 5 10"
-              fill="none"
-            >
-              <path
-                d="M0.990782 9.19354L4.87326 5.32258C4.91935 5.27649 4.95207 5.22657 4.97142 5.17281C4.99078 5.11904 5.0003 5.06144 4.99999 5C4.99999 4.93855 4.99032 4.88095 4.97096 4.82719C4.95161 4.77342 4.91904 4.7235 4.87326 4.67742L0.990782 0.794934C0.883255 0.687407 0.748847 0.633644 0.587557 0.633644C0.426267 0.633644 0.288018 0.691248 0.172811 0.806455C0.0576038 0.921662 9.01284e-10 1.05607 1.22902e-09 1.20968C1.55676e-09 1.36329 0.0576038 1.4977 0.172811 1.61291L3.5599 5L0.172811 8.38709C0.0652843 8.49462 0.0115204 8.62718 0.0115204 8.78478C0.0115204 8.94239 0.0691242 9.07864 0.184331 9.19354C0.299539 9.30875 0.433947 9.36635 0.587557 9.36635C0.741167 9.36635 0.875575 9.30875 0.990782 9.19354Z"
-                fill="white"
-              />
-            </svg>
-            <a href="">CRM</a>
-          </div>
-      
-          <h1 class="page__title">CRM</h1>
-      
-          <div class="hero__img img-wrap">
-            <picture>
-              <source
-                srcset="images/hero-2x.webp"
-                type="image/webp"
-                media="(min-width: 641px)"
-              />
-              <source srcset="images/hero-2x.png" media="(min-width: 641px)" />
-              <source
-                srcset="images/hero.webp"
-                media="(max-width: 640px)"
-                type="image/webp"
-              />
-              <img src="images/hero.png" alt="crm" />
-            </picture>
-          </div>
-      
-          <div class="hero__button main-button">оставить заявку</div>
+    <!--  -->
+    <section class="hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="">Главная</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="5"
+            height="10"
+            viewBox="0 0 5 10"
+            fill="none"
+          >
+            <path
+              d="M0.990782 9.19354L4.87326 5.32258C4.91935 5.27649 4.95207 5.22657 4.97142 5.17281C4.99078 5.11904 5.0003 5.06144 4.99999 5C4.99999 4.93855 4.99032 4.88095 4.97096 4.82719C4.95161 4.77342 4.91904 4.7235 4.87326 4.67742L0.990782 0.794934C0.883255 0.687407 0.748847 0.633644 0.587557 0.633644C0.426267 0.633644 0.288018 0.691248 0.172811 0.806455C0.0576038 0.921662 9.01284e-10 1.05607 1.22902e-09 1.20968C1.55676e-09 1.36329 0.0576038 1.4977 0.172811 1.61291L3.5599 5L0.172811 8.38709C0.0652843 8.49462 0.0115204 8.62718 0.0115204 8.78478C0.0115204 8.94239 0.0691242 9.07864 0.184331 9.19354C0.299539 9.30875 0.433947 9.36635 0.587557 9.36635C0.741167 9.36635 0.875575 9.30875 0.990782 9.19354Z"
+              fill="white"
+            />
+          </svg>
+          <a href="">Услуги Альфа маркетинг</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="5"
+            height="10"
+            viewBox="0 0 5 10"
+            fill="none"
+          >
+            <path
+              d="M0.990782 9.19354L4.87326 5.32258C4.91935 5.27649 4.95207 5.22657 4.97142 5.17281C4.99078 5.11904 5.0003 5.06144 4.99999 5C4.99999 4.93855 4.99032 4.88095 4.97096 4.82719C4.95161 4.77342 4.91904 4.7235 4.87326 4.67742L0.990782 0.794934C0.883255 0.687407 0.748847 0.633644 0.587557 0.633644C0.426267 0.633644 0.288018 0.691248 0.172811 0.806455C0.0576038 0.921662 9.01284e-10 1.05607 1.22902e-09 1.20968C1.55676e-09 1.36329 0.0576038 1.4977 0.172811 1.61291L3.5599 5L0.172811 8.38709C0.0652843 8.49462 0.0115204 8.62718 0.0115204 8.78478C0.0115204 8.94239 0.0691242 9.07864 0.184331 9.19354C0.299539 9.30875 0.433947 9.36635 0.587557 9.36635C0.741167 9.36635 0.875575 9.30875 0.990782 9.19354Z"
+              fill="white"
+            />
+          </svg>
+          <a href="">CRM</a>
         </div>
-      </section>
-      <!--  -->
-      <section class="features">
-        <div class="container">
-          <h2 class="page__subtitle nocaps">
-            Управление <br />
-            бизнес-процессами
-          </h2>
-          <div class="features-wrapper">
-            <div class="features-item">
-              <div class="features-item__img img-wrap">
-                <picture>
-                  <source
-                    class="lazy"
-                    data-src="images/features-1.webp"
-                    type="image/webp"
-                  />
-                  <img class="lazy" data-src="images/features-1.png" alt="Удобное" />
-                </picture>
-              </div>
-              <div class="features-item__title">
-                Удобное общение <br />
-                с заказчиками
-              </div>
+    
+        <h1 class="page__title">CRM</h1>
+    
+        <div class="hero__img img-wrap">
+          <picture>
+            <source
+              srcset="images/hero-2x.webp"
+              type="image/webp"
+              media="(min-width: 641px)"
+            />
+            <source srcset="images/hero-2x.png" media="(min-width: 641px)" />
+            <source
+              srcset="images/hero.webp"
+              media="(max-width: 640px)"
+              type="image/webp"
+            />
+            <img src="images/hero.png" alt="crm" />
+          </picture>
+        </div>
+    
+        <div class="hero__button hero-button">оставить заявку</div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="features">
+      <div class="container">
+        <h2 class="page__subtitle nocaps">
+          Управление <br />
+          бизнес-процессами
+        </h2>
+        <div class="features-wrapper">
+          <div class="features-item">
+            <div class="features-item__img img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/features-1.webp"
+                  type="image/webp"
+                />
+                <img class="lazy" data-src="images/features-1.png" alt="Удобное" />
+              </picture>
             </div>
-      
-            <div class="features-item">
-              <div class="features-item__img img-wrap">
-                <picture>
-                  <source
-                    class="lazy"
-                    data-src="images/features-2.webp"
-                    type="image/webp"
-                  />
-                  <img class="lazy" data-src="images/features-2.png" alt="Лучшие" />
-                </picture>
-              </div>
-              <div class="features-item__title">
-                Лучшие <br />
-                CRM-системы
-              </div>
+            <div class="features-item__title">
+              Удобное общение <br />
+              с заказчиками
             </div>
-      
-            <div class="features-item">
-              <div class="features-item__img img-wrap">
+          </div>
+    
+          <div class="features-item">
+            <div class="features-item__img img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/features-2.webp"
+                  type="image/webp"
+                />
+                <img class="lazy" data-src="images/features-2.png" alt="Лучшие" />
+              </picture>
+            </div>
+            <div class="features-item__title">
+              Лучшие <br />
+              CRM-системы
+            </div>
+          </div>
+    
+          <div class="features-item">
+            <div class="features-item__img img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/features-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="lazy"
+                  data-src="images/features-3.png"
+                  alt="Повышение"
+                />
+              </picture>
+            </div>
+            <div class="features-item__title">
+              Повышение эффективности <br />
+              отдела продаж
+            </div>
+          </div>
+    
+          <div class="features-item">
+            <div class="features-item__img img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/features-4.webp"
+                  type="image/webp"
+                />
+                <img class="lazy" data-src="images/features-4.png" alt="Карточка" />
+              </picture>
+            </div>
+            <div class="features-item__title">
+              Карточка с историей событий для каждого заказчика
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="function">
+      <div class="container">
+        <div class="function-wrapper">
+          <div class="function-item">
+            <div class="function-item__img img-wrap">
+              <picture>
+                <source
+                  data-srcset="images/function-1.webp"
+                  type="image/webp"
+                  media="(min-width: 641px)"
+                />
+                <source
+                  data-srcset="images/function-1.png"
+                  media="(min-width: 641px)"
+                />
+                <source
+                  class="lazy"
+                  data-src="images/function-1-mobile.webp"
+                  type="image/webp"
+                  media="(max-width: 640px)"
+                />
+                <img
+                  class="lazy"
+                  data-src="images/function-1-mobile.png"
+                  alt="amocrm"
+                />
+              </picture>
+            </div>
+    
+            <div class="function-item__content">
+              <p class="content-title">Функции:</p>
+    
+              <ul class="content-list">
+                <li>CRM</li>
+    
+                <li>Интеграция с другими сервисами</li>
+    
+                <li>Онлайн-бот</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="function-item">
+            <div class="function-item__img img-wrap">
+              <picture>
+                <source
+                  data-srcset="images/function-2.webp"
+                  type="image/webp"
+                  media="(min-width: 641px)"
+                />
+                <source
+                  data-srcset="images/function-2.png"
+                  media="(min-width: 641px)"
+                />
+                <source
+                  class="lazy"
+                  data-src="images/function-2-mobile.webp"
+                  type="image/webp"
+                  media="(max-width: 640px)"
+                />
+                <img
+                  class="lazy"
+                  data-src="images/function-2-mobile.png"
+                  alt="битрикс"
+                />
+              </picture>
+            </div>
+    
+            <div class="function-item__content">
+              <p class="content-title">Функции:</p>
+    
+              <ul class="content-list">
+                <li>CRM</li>
+    
+                <li>Корпоративный портал</li>
+    
+                <li>Онлайн офис</li>
+    
+                <li>Интеграция с другими сервисами и т.д.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="busines">
+      <div class="container">
+        <h2 class="page__subtitle caps">CRM В БИЗНЕСЕ</h2>
+        <p class="page__aftertitle">Наши кейсы</p>
+    
+        <div class="busines-wrapper">
+          <div class="busines-item">
+            <div class="busines-item__img">
+              <div class="img-wrap">
                 <picture>
                   <source
-                    class="lazy"
-                    data-src="images/features-3.webp"
+                    data-srcset="images/busines-1.webp"
                     type="image/webp"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    data-srcset="images/busines-1.png"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    class="lazy"
+                    data-src="images/busines-1-mobile.webp"
+                    type="image/webp"
+                    media="(max-width: 640px)"
                   />
                   <img
                     class="lazy"
-                    data-src="images/features-3.png"
-                    alt="Повышение"
+                    data-src="images/busines-1-mobile.png"
+                    alt="Пестовский Лесокомбинат"
                   />
                 </picture>
-              </div>
-              <div class="features-item__title">
-                Повышение эффективности <br />
-                отдела продаж
               </div>
             </div>
-      
-            <div class="features-item">
-              <div class="features-item__img img-wrap">
+    
+            <div class="busines-item__content">
+              <p class="content-title">“Пестовский Лесокомбинат”</p>
+    
+              <p class="content-subtitle">Строительная компания</p>
+              <p class="content-descr">Работают на платформе amoCRM</p>
+    
+              <div class="content-button busines-button">Подробнее</div>
+            </div>
+          </div>
+    
+          <div class="busines-item">
+            <div class="busines-item__img">
+              <div class="img-wrap">
                 <picture>
                   <source
-                    class="lazy"
-                    data-src="images/features-4.webp"
+                    data-srcset="images/busines-2.webp"
                     type="image/webp"
+                    media="(min-width: 641px)"
                   />
-                  <img class="lazy" data-src="images/features-4.png" alt="Карточка" />
+                  <source
+                    data-srcset="images/busines-2.png"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    class="lazy"
+                    data-src="images/busines-2-mobile.webp"
+                    type="image/webp"
+                    media="(max-width: 640px)"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="images/busines-2-mobile.png"
+                    alt="Пестовский Лесокомбинат"
+                  />
                 </picture>
               </div>
-              <div class="features-item__title">
-                Карточка с историей событий для каждого заказчика
-              </div>
+            </div>
+    
+            <div class="busines-item__content">
+              <p class="content-title">Магазин “Mongol Store”</p>
+    
+              <p class="content-subtitle">Одежда из натуральной шерсти</p>
+              <p class="content-descr">Используют БитриксCRM</p>
+    
+              <div class="content-button busines-button">Подробнее</div>
             </div>
           </div>
         </div>
-      </section>
-      <!--  -->
-    </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="coast">
+      <div class="container">
+        <h2 class="page__subtitle caps">СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</h2>
+    
+        <div class="coast-wrapper">
+          <div class="coast-item">
+            <div>
+              <div class="coast-item__title">
+                <p>Подключение системы CRM</p>
+                <span>от 10 000 ₽</span>
+              </div>
+              <ul class="coast-item__list">
+                <li>Покупка любого тарифа со скидкой</li>
+              </ul>
+            </div>
+            <div class="coast-item__button main-button">
+              ЗАКАЗАТЬ
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path
+                  d="M21 0.514648L1 20.5146M21 0.514648C18.907 1.5224 11.265 3.27287 4.48837 0.747207M21 0.514648C19.9922 4.15806 18.5814 12.7007 21 17.7239"
+                  stroke="#E9DEFF"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+    
+          <div class="coast-item">
+            <div>
+              <div class="coast-item__title">
+                <p>Подключение системы CRM + настройка</p>
+                <span>от 15 000 ₽</span>
+              </div>
+              <ul class="coast-item__list">
+                <li>Покупка любого тарифа со скидкой</li>
+                <li>Индивидуальная настройка системы</li>
+              </ul>
+            </div>
+            <div class="coast-item__button main-button">
+              ЗАКАЗАТЬ
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path
+                  d="M21 0.514648L1 20.5146M21 0.514648C18.907 1.5224 11.265 3.27287 4.48837 0.747207M21 0.514648C19.9922 4.15806 18.5814 12.7007 21 17.7239"
+                  stroke="#E9DEFF"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+    
+          <div class="coast-item">
+            <div>
+              <div class="coast-item__title">
+                <p>
+                  Продление лицензий <br />
+                  amoCRM и Битрикс24
+                </p>
+                <span>от 10 000 ₽</span>
+              </div>
+              <ul class="coast-item__list">
+                <li>
+                  Возможность продления лицензий со скидкой от официальных цен
+                </li>
+              </ul>
+            </div>
+            <div class="coast-item__button main-button">
+              ЗАКАЗАТЬ
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path
+                  d="M21 0.514648L1 20.5146M21 0.514648C18.907 1.5224 11.265 3.27287 4.48837 0.747207M21 0.514648C19.9922 4.15806 18.5814 12.7007 21 17.7239"
+                  stroke="#E9DEFF"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

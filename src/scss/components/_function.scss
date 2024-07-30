@@ -1,0 +1,128 @@
+.function {
+  @extend %pb;
+
+  .function-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+
+    @media (max-width: 980px) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .function-item {
+      box-shadow: 0px 0px 20px 0px rgba(215, 149, 255, 1),
+        0px 0px 4px 0px rgba(215, 149, 255, 1);
+
+      border-radius: 20px;
+      border: 2px solid transparent;
+      overflow: hidden;
+      background: linear-gradient(rgba(72, 5, 114, 0.5), rgba(72, 5, 114, 0.5))
+          padding-box,
+        linear-gradient(
+            147.77deg,
+            #9400ff 14.56%,
+            rgba(198, 79, 135, 0.83) 86.63%
+          )
+          border-box;
+
+      align-items: center;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      max-width: 340px;
+      margin: 0 auto;
+      width: 100%;
+      @media (min-width: 641px) {
+        max-width: 690px;
+      }
+      @media (min-width: 981px) {
+        flex: 1 1 0;
+      }
+
+      &__img {
+        background: linear-gradient(230.07deg, #ffffff -50.81%, #0e9ddd 94.55%);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 170px;
+          aspect-ratio: 169/157;
+          width: 100%;
+
+          @media (min-width: 641px) {
+            max-width: 345px;
+            aspect-ratio: 345/320;
+          }
+        }
+      }
+
+      &__content {
+        padding: 10px;
+        align-self: start;
+
+        @media (min-width: 641px) {
+          padding: 20px;
+        }
+
+        .content-title {
+          font-family: Play;
+          font-weight: 900;
+          margin-bottom: 10px;
+
+          background: linear-gradient(
+            176.42deg,
+            #b195ff -126.75%,
+            #e9c6ff 97.05%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          max-width: max-content;
+          font-size: 16px;
+          line-height: 20px;
+
+          @media (min-width: 641px) {
+            font-size: 24px;
+            line-height: 46.8px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .content-list {
+          padding-left: 0;
+
+          li {
+            color: rgba(255, 255, 255, 1);
+
+            font-family: Play;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 14px;
+            line-height: 14px;
+
+            @media (min-width: 641px) {
+              font-size: 20px;
+              line-height: 23.14px;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+
+              @media (min-width: 641px) {
+                margin-bottom: 20px;
+              }
+            }
+
+            @extend %li-item;
+          }
+        }
+      }
+    }
+  }
+}

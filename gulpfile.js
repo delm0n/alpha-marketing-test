@@ -5,11 +5,13 @@ const imagemin = require("gulp-imagemin"); // оптимизирует изоб�
 const pngquant = require("imagemin-pngquant"); // качественно сжимает png
 const webp = require("gulp-webp"); // конвертирует изображения в webp
 
-const rigger = require("gulp-rigger");
+const clean = require("gulp-clean"); //очистка директории
+
+const rigger = require("gulp-rigger"); //склеивание html
 
 const gcmq = require("gulp-group-css-media-queries"); // сливает однинаковые media
 const cleancss = require("gulp-clean-css"); // минифицирует css
-const sass = require("gulp-sass")(require("sass"));
+const sass = require("gulp-sass")(require("sass")); //scss -> css
 
 // пути к файлам
 const paths = {
@@ -67,6 +69,10 @@ function cssTask() {
     .pipe(gulp.dest(paths.css.dest));
 }
 
+function docsClean() {
+  return gulp.src("docs/*", { read: false }).pipe(clean());
+}
+
 // запуск задач при изменении файлов
 gulp.task("watch", function () {
   gulp.watch("src/**/*.html", parallel(htmlTask, cssTask));
@@ -74,4 +80,7 @@ gulp.task("watch", function () {
   gulp.watch("src/scss/**/*.scss", parallel(htmlTask, cssTask));
 });
 
-exports.build = series(parallel(imgTask, webpTask, htmlTask, cssTask));
+exports.build = series(
+  docsClean,
+  parallel(imgTask, webpTask, htmlTask, cssTask)
+);
