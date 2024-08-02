@@ -95,7 +95,6 @@
       margin: 0 auto;
       .navbar__logo {
         cursor: pointer;
-
         max-width: 101.5px;
 
         @media (min-width: 641px) {
@@ -104,6 +103,12 @@
 
         @media (min-width: 1200px) {
           max-width: 220px;
+        }
+
+        svg {
+          display: block;
+          width: 100%;
+          height: auto;
         }
       }
 

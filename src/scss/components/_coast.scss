@@ -14,6 +14,10 @@
       margin: 75px auto 0;
     }
 
+    @media (max-width: 980px) {
+      margin-top: 45px;
+    }
+
     .coast-item {
       max-width: 690px;
       width: 100%;
@@ -23,7 +27,7 @@
       justify-content: space-between;
 
       padding: 35px;
-      border: 2px solid;
+      border: 2px solid transparent;
       border-radius: 20px;
       overflow: hidden;
       background: url("../docs/images/coast-bg.webp") no-repeat center

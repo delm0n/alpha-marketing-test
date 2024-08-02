@@ -15,10 +15,11 @@
       box-shadow: 0px 0px 20px 0px rgba(215, 149, 255, 1),
         0px 0px 4px 0px rgba(215, 149, 255, 1);
 
-      border-radius: 20px;
+      border-radius: 10px;
       border: 2px solid transparent;
       overflow: hidden;
-      background: linear-gradient(rgba(72, 5, 114, 0.5), rgba(72, 5, 114, 0.5))
+
+      background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114))
           padding-box,
         linear-gradient(
             147.77deg,
@@ -40,6 +41,7 @@
       }
       @media (min-width: 981px) {
         flex: 1 1 0;
+        border-radius: 20px;
       }
 
       &__img {

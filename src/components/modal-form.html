@@ -1,0 +1,50 @@
+<div id="call-form">
+  <div class="form-wrapper">
+    <p class="title-form">Форма для заполнения</p>
+    <p class="subtitle-form">
+      Оставьте свои контактные данные, и мы свяжемся с Вами в течение 20 минут
+    </p>
+
+    <input
+      class="input-form"
+      type="text"
+      name="phone"
+      autocomplete="off"
+      placeholder="Ваш телефон"
+    />
+
+    <input
+      class="input-form"
+      type="email"
+      name="email"
+      autocomplete="off"
+      required
+      placeholder="@Почта*"
+    />
+
+    <button disabled="true" class="main-button">ОТПРАВИТЬ ЗАЯВКУ</button>
+
+    <label>
+      <input type="checkbox" autocomplete="off" />
+      <span class="checkbox__form-label">&nbsp;&nbsp;&nbsp; </span>
+
+      <span class="policy">
+        Нажимая на кнопку, я соглашаюсь с условиями <br />
+        <b> Политики конфиденциальности</b>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div id="success-form">
+  <div class="form-wrapper">
+    <div class="form-wrapper__img img-wrap">
+      <picture>
+        <source class="lazy" data-src="images/check.webp" type="image/webp" />
+        <img class="lazy" data-src="images/check.png" alt="#" />
+      </picture>
+    </div>
+
+    <p>Ваша заявка успешно отправлена!</p>
+  </div>
+</div>
