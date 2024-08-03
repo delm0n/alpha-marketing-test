@@ -1,0 +1,222 @@
+.system {
+  @extend %pb;
+
+  .system-forms {
+    border-radius: 32px;
+    max-width: 652px;
+    padding: 44px;
+    border: 2px solid transparent;
+    margin: 0 auto;
+
+    background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+      linear-gradient(
+          147.77deg,
+          #9400ff 14.56%,
+          rgba(198, 79, 135, 0.83) 86.63%
+        )
+        border-box;
+    box-shadow: 0px 0px 10px 0px rgba(150, 98, 255, 1);
+
+    @media (max-width: 640px) {
+      padding: 44px 10px;
+      max-width: 340px;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      gap: 17px;
+
+      max-width: 452px;
+      margin: 0 auto;
+
+      @media (max-width: 640px) {
+        gap: 20px;
+      }
+    }
+
+    &__title {
+      p {
+        font-family: Play;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+
+        @media (max-width: 640px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      h2 {
+        font-family: Play;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 52px;
+        letter-spacing: -0.4px;
+        text-align: center;
+
+        background: linear-gradient(
+          176.42deg,
+          #b195ff -126.75%,
+          #d795ff 97.05%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        max-width: max-content;
+        margin: 0 auto 20px;
+
+        @media (max-width: 640px) {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &__button {
+      max-width: none;
+      font-size: 20px;
+      line-height: 23.14px;
+      letter-spacing: -0.01em;
+      border-radius: 19.17px;
+
+      padding: 20px 15px;
+
+      @media (max-width: 640px) {
+        font-size: 16px;
+        border-radius: 10px;
+        line-height: 18.51px;
+      }
+    }
+
+    .input-form {
+      border: 5px solid transparent;
+      background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114))
+          padding-box,
+        linear-gradient(
+            147.77deg,
+            rgba(148, 0, 255, 0.2) 14.56%,
+            rgba(198, 79, 135, 0.166) 86.63%
+          )
+          border-box;
+      padding: 24px;
+
+      font-family: Play;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 1);
+
+      @media (max-width: 640px) {
+        padding: 14px 24px;
+
+        font-size: 14px;
+        border-radius: 5px;
+        line-height: 22px;
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 1);
+      }
+
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-visible {
+        background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114))
+            padding-box,
+          linear-gradient(
+              147.77deg,
+              rgba(148, 0, 255, 0.5) 14.56%,
+              rgba(198, 79, 135, 0.7) 86.63%
+            )
+            border-box;
+      }
+    }
+
+    textarea.input-form {
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .drop-box {
+      position: relative;
+      cursor: pointer;
+    }
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg {
+        transition: all 0.3s;
+
+        @media (max-width: 640px) {
+          width: 15px;
+        }
+      }
+
+      &--active {
+        background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114))
+            padding-box,
+          linear-gradient(
+              147.77deg,
+              rgba(148, 0, 255, 0.5) 14.56%,
+              rgba(198, 79, 135, 0.7) 86.63%
+            )
+            border-box;
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__dropdown {
+      border-radius: 10px;
+      width: 100%;
+      padding: 18px 40px;
+      display: none;
+      position: absolute;
+      background: #3f0568;
+      z-index: 5;
+
+      @media (max-width: 640px) {
+        padding: 15px 20px;
+      }
+
+      li {
+        font-family: Play;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+        transition: all 0.4s;
+
+        @media (max-width: 640px) {
+          font-size: 14px;
+          line-height: 15px;
+        }
+
+        &:hover {
+          text-shadow: 0px 0px 20px rgba(215, 149, 255, 1),
+            0px 0px 4px rgba(215, 149, 255, 1);
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 17px;
+
+          @media (max-width: 640px) {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}

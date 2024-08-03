@@ -1,0 +1,32 @@
+.pagecrm_body {
+  @media (min-width: 641px) {
+    padding-top: 75px;
+    background: url("../docs/images/bg-1.webp") no-repeat center,
+      url("../docs/images/bg-4.webp") no-repeat, #000;
+    background-position: top center, bottom center, center;
+    background-size: contain, cover, cover;
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 75px;
+    background: url("../docs/images/pagecrm_bg-mobile.webp") no-repeat center,
+      #000;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .bg-lines-group {
+    position: relative;
+    @media (min-width: 641px) {
+      background: url("../docs/images/system-bg.webp") no-repeat,
+        url("../docs/images/bg-2.webp") no-repeat,
+        url("../docs/images/bg-3.webp") no-repeat;
+      background-position: top center, top -40px right, bottom left;
+      background-size: contain, contain, contain;
+    }
+
+    @media (min-width: 1601px) {
+      background-size: contain, cover, cover;
+    }
+  }
+}

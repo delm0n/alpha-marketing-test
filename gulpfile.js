@@ -76,7 +76,7 @@ function docsClean() {
 // запуск задач при изменении файлов
 gulp.task("watch", function () {
   gulp.watch("src/**/*.html", parallel(htmlTask, cssTask));
-  gulp.watch(paths.img.src, parallel(imgTask, webpTask));
+  // gulp.watch(paths.img.src, webpTask);
   gulp.watch("src/scss/**/*.scss", parallel(htmlTask, cssTask));
 });
 

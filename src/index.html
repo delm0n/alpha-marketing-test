@@ -7,7 +7,31 @@
 
     <link
       rel="preload"
-      href="./images/pagecrm_bg-2.webp"
+      href="./images/bg-1.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-2.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-3.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-4.webp"
       media="(min-width: 641px)"
       as="image"
       type="image/webp"
@@ -25,20 +49,67 @@
     <link rel="stylesheet" href="../style/fancybox-4.min.css" />
   </head>
   <body class="pagecrm_body">
+    <div class="sticky-btns">
+      <ul class="sticky-btns__list">
+        <li
+          class="ask sticky-btns__item"
+          data-toggle="modal"
+          data-target="#modal-widjet"
+        >
+          <svg
+            width="19"
+            height="32"
+            viewBox="0 0 19 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.04142 21.6667C8.37476 21.6667 7.81254 21.4306 7.35476 20.9583C6.89698 20.4861 6.69531 19.9306 6.74976 19.2917C6.83309 18.125 7.11087 17.1111 7.58309 16.25C8.05531 15.3889 8.80532 14.5 9.83309 13.5833C10.972 12.5833 11.8403 11.715 12.4381 10.9783C13.0359 10.2417 13.3342 9.40167 13.3331 8.45833C13.3331 7.31944 12.9514 6.375 12.1881 5.625C11.4248 4.875 10.362 4.5 8.99976 4.5C8.11087 4.5 7.35365 4.68778 6.72809 5.06333C6.10254 5.43889 5.59587 5.90389 5.20809 6.45833C4.8192 7.01389 4.34031 7.38889 3.77143 7.58333C3.20254 7.77778 2.65365 7.76389 2.12476 7.54167C1.48587 7.26389 1.04865 6.80555 0.813092 6.16667C0.577537 5.52778 0.62587 4.93056 0.958093 4.375C1.76365 3.125 2.84698 2.08333 4.20809 1.25C5.5692 0.416667 7.16643 0 8.99976 0C11.9164 0 14.1598 0.812222 15.7298 2.43667C17.2998 4.06111 18.0842 6.01278 18.0831 8.29167C18.0831 9.68056 17.7848 10.8683 17.1881 11.855C16.5914 12.8417 15.6536 13.9594 14.3748 15.2083C13.4303 16.0972 12.7636 16.8194 12.3748 17.375C11.9859 17.9306 11.722 18.5694 11.5831 19.2917C11.472 19.9861 11.1803 20.5556 10.7081 21C10.2359 21.4444 9.68031 21.6667 9.04142 21.6667ZM8.99976 31.6667C8.08309 31.6667 7.29809 31.34 6.64476 30.6867C5.99143 30.0333 5.66531 29.2489 5.66643 28.3333C5.66643 27.4167 5.99309 26.6317 6.64643 25.9783C7.29976 25.325 8.0842 24.9989 8.99976 25C9.91643 25 10.7014 25.3267 11.3548 25.98C12.0081 26.6333 12.3342 27.4178 12.3331 28.3333C12.3331 29.25 12.0064 30.035 11.3531 30.6883C10.6998 31.3417 9.91531 31.6678 8.99976 31.6667Z"
+              fill="#F8EDFF"
+            ></path>
+          </svg>
+        </li>
+        <li
+          class="phone sticky-btns__item"
+          data-toggle="modal"
+          data-target="#modal-callback"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.25 30C24.6667 30 21.1739 29.2011 17.7717 27.6033C14.3694 26.0056 11.3556 23.8944 8.73 21.27C6.10444 18.6456 3.99333 15.6317 2.39667 12.2283C0.8 8.825 0.00111111 5.33222 0 1.75C0 1.25 0.166667 0.833333 0.5 0.5C0.833333 0.166667 1.25 0 1.75 0H8.5C8.88889 0 9.23611 0.125 9.54167 0.375C9.84722 0.625 10.0278 0.944444 10.0833 1.33333L11.1667 7.16667C11.2222 7.55556 11.215 7.91 11.145 8.23C11.075 8.55 10.9156 8.83444 10.6667 9.08333L6.66667 13.1667C7.83333 15.1667 9.29167 17.0417 11.0417 18.7917C12.7917 20.5417 14.7222 22.0556 16.8333 23.3333L20.75 19.4167C21 19.1667 21.3267 18.9794 21.73 18.855C22.1333 18.7306 22.5289 18.6956 22.9167 18.75L28.6667 19.9167C29.0556 20 29.375 20.1878 29.625 20.48C29.875 20.7722 30 21.1122 30 21.5V28.25C30 28.75 29.8333 29.1667 29.5 29.5C29.1667 29.8333 28.75 30 28.25 30Z"
+              fill="#F8EDFF"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+    </div>
     <!--  -->
     //= components/header.html
     <!--  -->
     //= components/hero.html
-    <!--  -->
-    //= components/features.html
-    <!--  -->
-    //= components/function.html
-    <!--  -->
-    //= components/benefit.html
-    <!--  -->
-    //= components/busines.html
+    <div class="bg-lines-group">
+      <!--  -->
+      //= components/features.html
+      <!--  -->
+      //= components/function.html
+      <!--  -->
+      //= components/system.html
+      <!--  -->
+      //= components/benefit.html
+
+      <!--  -->
+      //= components/busines.html
+    </div>
     <!--  -->
     //= components/coast.html
+    <!--  -->
+    //= components/order.html
     <!--  -->
     //= components/partner.html
     <!--  -->
@@ -46,7 +117,8 @@
     <!--  -->
     //= components/modal-form.html
     <!--  -->
-
+    //= components/footer.html
+    <!--  -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

@@ -7,7 +7,7 @@
 
   @media (max-width: 640px) {
     &.scroll {
-      top: -35px;
+      transform: translateY(-35px);
     }
   }
 

@@ -106,6 +106,10 @@
         color: rgba(56, 56, 56, 1);
         border-radius: 5px;
 
+        &::placeholder {
+          color: rgba(56, 56, 56, 1);
+        }
+
         &:hover,
         &:active,
         &:focus,

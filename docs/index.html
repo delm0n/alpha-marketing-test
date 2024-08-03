@@ -7,7 +7,31 @@
 
     <link
       rel="preload"
-      href="./images/pagecrm_bg-2.webp"
+      href="./images/bg-1.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-2.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-3.webp"
+      media="(min-width: 641px)"
+      as="image"
+      type="image/webp"
+    />
+
+    <link
+      rel="prefetch"
+      href="./images/bg-4.webp"
       media="(min-width: 641px)"
       as="image"
       type="image/webp"
@@ -25,6 +49,46 @@
     <link rel="stylesheet" href="../style/fancybox-4.min.css" />
   </head>
   <body class="pagecrm_body">
+    <div class="sticky-btns">
+      <ul class="sticky-btns__list">
+        <li
+          class="ask sticky-btns__item"
+          data-toggle="modal"
+          data-target="#modal-widjet"
+        >
+          <svg
+            width="19"
+            height="32"
+            viewBox="0 0 19 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.04142 21.6667C8.37476 21.6667 7.81254 21.4306 7.35476 20.9583C6.89698 20.4861 6.69531 19.9306 6.74976 19.2917C6.83309 18.125 7.11087 17.1111 7.58309 16.25C8.05531 15.3889 8.80532 14.5 9.83309 13.5833C10.972 12.5833 11.8403 11.715 12.4381 10.9783C13.0359 10.2417 13.3342 9.40167 13.3331 8.45833C13.3331 7.31944 12.9514 6.375 12.1881 5.625C11.4248 4.875 10.362 4.5 8.99976 4.5C8.11087 4.5 7.35365 4.68778 6.72809 5.06333C6.10254 5.43889 5.59587 5.90389 5.20809 6.45833C4.8192 7.01389 4.34031 7.38889 3.77143 7.58333C3.20254 7.77778 2.65365 7.76389 2.12476 7.54167C1.48587 7.26389 1.04865 6.80555 0.813092 6.16667C0.577537 5.52778 0.62587 4.93056 0.958093 4.375C1.76365 3.125 2.84698 2.08333 4.20809 1.25C5.5692 0.416667 7.16643 0 8.99976 0C11.9164 0 14.1598 0.812222 15.7298 2.43667C17.2998 4.06111 18.0842 6.01278 18.0831 8.29167C18.0831 9.68056 17.7848 10.8683 17.1881 11.855C16.5914 12.8417 15.6536 13.9594 14.3748 15.2083C13.4303 16.0972 12.7636 16.8194 12.3748 17.375C11.9859 17.9306 11.722 18.5694 11.5831 19.2917C11.472 19.9861 11.1803 20.5556 10.7081 21C10.2359 21.4444 9.68031 21.6667 9.04142 21.6667ZM8.99976 31.6667C8.08309 31.6667 7.29809 31.34 6.64476 30.6867C5.99143 30.0333 5.66531 29.2489 5.66643 28.3333C5.66643 27.4167 5.99309 26.6317 6.64643 25.9783C7.29976 25.325 8.0842 24.9989 8.99976 25C9.91643 25 10.7014 25.3267 11.3548 25.98C12.0081 26.6333 12.3342 27.4178 12.3331 28.3333C12.3331 29.25 12.0064 30.035 11.3531 30.6883C10.6998 31.3417 9.91531 31.6678 8.99976 31.6667Z"
+              fill="#F8EDFF"
+            ></path>
+          </svg>
+        </li>
+        <li
+          class="phone sticky-btns__item"
+          data-toggle="modal"
+          data-target="#modal-callback"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.25 30C24.6667 30 21.1739 29.2011 17.7717 27.6033C14.3694 26.0056 11.3556 23.8944 8.73 21.27C6.10444 18.6456 3.99333 15.6317 2.39667 12.2283C0.8 8.825 0.00111111 5.33222 0 1.75C0 1.25 0.166667 0.833333 0.5 0.5C0.833333 0.166667 1.25 0 1.75 0H8.5C8.88889 0 9.23611 0.125 9.54167 0.375C9.84722 0.625 10.0278 0.944444 10.0833 1.33333L11.1667 7.16667C11.2222 7.55556 11.215 7.91 11.145 8.23C11.075 8.55 10.9156 8.83444 10.6667 9.08333L6.66667 13.1667C7.83333 15.1667 9.29167 17.0417 11.0417 18.7917C12.7917 20.5417 14.7222 22.0556 16.8333 23.3333L20.75 19.4167C21 19.1667 21.3267 18.9794 21.73 18.855C22.1333 18.7306 22.5289 18.6956 22.9167 18.75L28.6667 19.9167C29.0556 20 29.375 20.1878 29.625 20.48C29.875 20.7722 30 21.1122 30 21.5V28.25C30 28.75 29.8333 29.1667 29.5 29.5C29.1667 29.8333 28.75 30 28.25 30Z"
+              fill="#F8EDFF"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+    </div>
     <!--  -->
     <header class="pagecrm_header">
       <div class="navbar">
@@ -420,289 +484,360 @@
         <div class="hero__button hero-button">оставить заявку</div>
       </div>
     </section>
-    <!--  -->
-    <section class="features">
-      <div class="container">
-        <h2 class="page__subtitle nocaps">
-          Управление <br />
-          бизнес-процессами
-        </h2>
-        <div class="features-wrapper">
-          <div class="features-item">
-            <div class="features-item__img img-wrap">
-              <picture>
-                <source
-                  class="lazy"
-                  data-src="images/features-1.webp"
-                  type="image/webp"
-                />
-                <img class="lazy" data-src="images/features-1.png" alt="Удобное" />
-              </picture>
+    <div class="bg-lines-group">
+      <!--  -->
+      <section class="features">
+        <div class="container">
+          <h2 class="page__subtitle nocaps">
+            Управление <br />
+            бизнес-процессами
+          </h2>
+          <div class="features-wrapper">
+            <div class="features-item">
+              <div class="features-item__img img-wrap">
+                <picture>
+                  <source
+                    class="lazy"
+                    data-src="images/features-1.webp"
+                    type="image/webp"
+                  />
+                  <img class="lazy" data-src="images/features-1.png" alt="Удобное" />
+                </picture>
+              </div>
+              <div class="features-item__title">
+                Удобное общение <br />
+                с заказчиками
+              </div>
             </div>
-            <div class="features-item__title">
-              Удобное общение <br />
-              с заказчиками
+      
+            <div class="features-item">
+              <div class="features-item__img img-wrap">
+                <picture>
+                  <source
+                    class="lazy"
+                    data-src="images/features-2.webp"
+                    type="image/webp"
+                  />
+                  <img class="lazy" data-src="images/features-2.png" alt="Лучшие" />
+                </picture>
+              </div>
+              <div class="features-item__title">
+                Лучшие <br />
+                CRM-системы
+              </div>
             </div>
-          </div>
-    
-          <div class="features-item">
-            <div class="features-item__img img-wrap">
-              <picture>
-                <source
-                  class="lazy"
-                  data-src="images/features-2.webp"
-                  type="image/webp"
-                />
-                <img class="lazy" data-src="images/features-2.png" alt="Лучшие" />
-              </picture>
+      
+            <div class="features-item">
+              <div class="features-item__img img-wrap">
+                <picture>
+                  <source
+                    class="lazy"
+                    data-src="images/features-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="images/features-3.png"
+                    alt="Повышение"
+                  />
+                </picture>
+              </div>
+              <div class="features-item__title">
+                Повышение эффективности <br />
+                отдела продаж
+              </div>
             </div>
-            <div class="features-item__title">
-              Лучшие <br />
-              CRM-системы
-            </div>
-          </div>
-    
-          <div class="features-item">
-            <div class="features-item__img img-wrap">
-              <picture>
-                <source
-                  class="lazy"
-                  data-src="images/features-3.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="lazy"
-                  data-src="images/features-3.png"
-                  alt="Повышение"
-                />
-              </picture>
-            </div>
-            <div class="features-item__title">
-              Повышение эффективности <br />
-              отдела продаж
-            </div>
-          </div>
-    
-          <div class="features-item">
-            <div class="features-item__img img-wrap">
-              <picture>
-                <source
-                  class="lazy"
-                  data-src="images/features-4.webp"
-                  type="image/webp"
-                />
-                <img class="lazy" data-src="images/features-4.png" alt="Карточка" />
-              </picture>
-            </div>
-            <div class="features-item__title">
-              Карточка с историей событий для каждого заказчика
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="function">
-      <div class="container">
-        <div class="function-wrapper">
-          <div class="function-item">
-            <div class="function-item__img img-wrap">
-              <picture>
-                <source
-                  data-srcset="images/function-1.webp"
-                  type="image/webp"
-                  media="(min-width: 641px)"
-                />
-                <source
-                  data-srcset="images/function-1.png"
-                  media="(min-width: 641px)"
-                />
-                <source
-                  class="lazy"
-                  data-src="images/function-1-mobile.webp"
-                  type="image/webp"
-                  media="(max-width: 640px)"
-                />
-                <img
-                  class="lazy"
-                  data-src="images/function-1-mobile.png"
-                  alt="amocrm"
-                />
-              </picture>
-            </div>
-    
-            <div class="function-item__content">
-              <p class="content-title">Функции:</p>
-    
-              <ul class="content-list">
-                <li>CRM</li>
-    
-                <li>Интеграция с другими сервисами</li>
-    
-                <li>Онлайн-бот</li>
-              </ul>
-            </div>
-          </div>
-    
-          <div class="function-item">
-            <div class="function-item__img img-wrap">
-              <picture>
-                <source
-                  data-srcset="images/function-2.webp"
-                  type="image/webp"
-                  media="(min-width: 641px)"
-                />
-                <source
-                  data-srcset="images/function-2.png"
-                  media="(min-width: 641px)"
-                />
-                <source
-                  class="lazy"
-                  data-src="images/function-2-mobile.webp"
-                  type="image/webp"
-                  media="(max-width: 640px)"
-                />
-                <img
-                  class="lazy"
-                  data-src="images/function-2-mobile.png"
-                  alt="битрикс"
-                />
-              </picture>
-            </div>
-    
-            <div class="function-item__content">
-              <p class="content-title">Функции:</p>
-    
-              <ul class="content-list">
-                <li>CRM</li>
-    
-                <li>Корпоративный портал</li>
-    
-                <li>Онлайн офис</li>
-    
-                <li>Интеграция с другими сервисами и т.д.</li>
-              </ul>
+      
+            <div class="features-item">
+              <div class="features-item__img img-wrap">
+                <picture>
+                  <source
+                    class="lazy"
+                    data-src="images/features-4.webp"
+                    type="image/webp"
+                  />
+                  <img class="lazy" data-src="images/features-4.png" alt="Карточка" />
+                </picture>
+              </div>
+              <div class="features-item__title">
+                Карточка с историей событий для каждого заказчика
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="benefit">
-      <div class="container">
-        <h2 class="page__subtitle caps">КОМУ ПОЛЕЗНА CRM</h2>
-        <div class="benefit-wrapper">
-          <div class="benefit-wrapper__content">
-            <ul>
-              <li>
-                Любому бизнесу, работающему <br />
-                с клиентской базой
-              </li>
-              <li>Бизнесу, управляющему ассортиментом</li>
-              <li>
-                Бизнесу, где есть задачи, планирование, <br />
-                отчетность и KPI
-              </li>
-            </ul>
+      </section>
+      <!--  -->
+      <section class="function">
+        <div class="container">
+          <div class="function-wrapper">
+            <div class="function-item">
+              <div class="function-item__img img-wrap">
+                <picture>
+                  <source
+                    data-srcset="images/function-1.webp"
+                    type="image/webp"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    data-srcset="images/function-1.png"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    class="lazy"
+                    data-src="images/function-1-mobile.webp"
+                    type="image/webp"
+                    media="(max-width: 640px)"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="images/function-1-mobile.png"
+                    alt="amocrm"
+                  />
+                </picture>
+              </div>
+      
+              <div class="function-item__content">
+                <p class="content-title">Функции:</p>
+      
+                <ul class="content-list">
+                  <li>CRM</li>
+      
+                  <li>Интеграция с другими сервисами</li>
+      
+                  <li>Онлайн-бот</li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="function-item">
+              <div class="function-item__img img-wrap">
+                <picture>
+                  <source
+                    data-srcset="images/function-2.webp"
+                    type="image/webp"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    data-srcset="images/function-2.png"
+                    media="(min-width: 641px)"
+                  />
+                  <source
+                    class="lazy"
+                    data-src="images/function-2-mobile.webp"
+                    type="image/webp"
+                    media="(max-width: 640px)"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="images/function-2-mobile.png"
+                    alt="битрикс"
+                  />
+                </picture>
+              </div>
+      
+              <div class="function-item__content">
+                <p class="content-title">Функции:</p>
+      
+                <ul class="content-list">
+                  <li>CRM</li>
+      
+                  <li>Корпоративный портал</li>
+      
+                  <li>Онлайн офис</li>
+      
+                  <li>Интеграция с другими сервисами и т.д.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="benefit-wrapper__img img-wrap">
-            <picture>
-              <source
-                class="lazy"
-                data-src="images/benefit-img.webp"
-                type="image/webp"
+        </div>
+      </section>
+      <!--  -->
+      <section class="system">
+        <div class="container">
+          <div class="system-forms">
+            <div class="system-forms__wrapper">
+              <div class="system-forms__title">
+                <h2>Оставить заявку</h2>
+                <p>
+                  Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение
+                  20 минут
+                </p>
+              </div>
+      
+              <input
+                class="input-form"
+                type="name"
+                name="name"
+                autocomplete="off"
+                required
+                placeholder="Ваше имя"
               />
-              <img class="lazy" data-src="images/benefit-img.png" alt="CRM" />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <section class="busines">
-      <div class="container">
-        <h2 class="page__subtitle caps">CRM В БИЗНЕСЕ</h2>
-        <p class="page__aftertitle">Наши кейсы</p>
-    
-        <div class="busines-wrapper">
-          <div class="busines-item">
-            <div class="busines-item__img">
-              <div class="img-wrap">
-                <picture>
-                  <source
-                    data-srcset="images/busines-1.webp"
-                    type="image/webp"
-                    media="(min-width: 641px)"
-                  />
-                  <source
-                    data-srcset="images/busines-1.png"
-                    media="(min-width: 641px)"
-                  />
-                  <source
-                    class="lazy"
-                    data-src="images/busines-1-mobile.webp"
-                    type="image/webp"
-                    media="(max-width: 640px)"
-                  />
-                  <img
-                    class="lazy"
-                    data-src="images/busines-1-mobile.png"
-                    alt="Пестовский Лесокомбинат"
-                  />
-                </picture>
+      
+              <input
+                class="input-form"
+                type="text"
+                name="phone"
+                autocomplete="off"
+                placeholder="Телефон"
+              />
+              <div class="drop-box">
+                <div class="input-form dropdown-toggle">
+                  <span> Выберите систему </span>
+      
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="12"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.3679 2.48464L10.5025 11.3765C10.3969 11.482 10.2826 11.5569 10.1594 11.6013C10.0363 11.6456 9.90439 11.6674 9.76367 11.6667C9.62295 11.6667 9.49102 11.6445 9.36789 11.6002C9.24476 11.5559 9.13042 11.4813 9.02488 11.3765L0.133065 2.48464C-0.113197 2.23838 -0.236328 1.93055 -0.236328 1.56116C-0.236328 1.19177 -0.104402 0.875144 0.15945 0.611292C0.423302 0.34744 0.73113 0.215513 1.08293 0.215513C1.43474 0.215513 1.74256 0.34744 2.00642 0.611292L9.76367 8.36855L17.5209 0.611292C17.7672 0.36503 18.0708 0.241899 18.4317 0.241899C18.7927 0.241899 19.1047 0.373824 19.3679 0.637676C19.6317 0.901528 19.7637 1.20936 19.7637 1.56116C19.7637 1.91296 19.6317 2.22079 19.3679 2.48464Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+      
+                <ul class="system-forms__dropdown dropdown">
+                  <li>amoCRM</li>
+                  <li>Битрикс24</li>
+                  <li>Нужна помощь в выборе</li>
+                </ul>
               </div>
-            </div>
-    
-            <div class="busines-item__content">
-              <p class="content-title">“Пестовский Лесокомбинат”</p>
-    
-              <p class="content-subtitle">Строительная компания</p>
-              <p class="content-descr">Работают на платформе amoCRM</p>
-    
-              <div class="content-button busines-button">Подробнее</div>
-            </div>
-          </div>
-    
-          <div class="busines-item">
-            <div class="busines-item__img">
-              <div class="img-wrap">
-                <picture>
-                  <source
-                    data-srcset="images/busines-2.webp"
-                    type="image/webp"
-                    media="(min-width: 641px)"
-                  />
-                  <source
-                    data-srcset="images/busines-2.png"
-                    media="(min-width: 641px)"
-                  />
-                  <source
-                    class="lazy"
-                    data-src="images/busines-2-mobile.webp"
-                    type="image/webp"
-                    media="(max-width: 640px)"
-                  />
-                  <img
-                    class="lazy"
-                    data-src="images/busines-2-mobile.png"
-                    alt="Пестовский Лесокомбинат"
-                  />
-                </picture>
-              </div>
-            </div>
-    
-            <div class="busines-item__content">
-              <p class="content-title">Магазин “Mongol Store”</p>
-    
-              <p class="content-subtitle">Одежда из натуральной шерсти</p>
-              <p class="content-descr">Используют БитриксCRM</p>
-    
-              <div class="content-button busines-button">Подробнее</div>
+      
+              <textarea
+                class="input-form"
+                rows="4"
+                name="text"
+                placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"
+              ></textarea>
+      
+              <button class="system-forms__button main-button">
+                ОТПРАВИТЬ ЗАЯВКУ
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!--  -->
+      <section class="benefit">
+        <div class="container">
+          <h2 class="page__subtitle caps">КОМУ ПОЛЕЗНА CRM</h2>
+          <div class="benefit-wrapper">
+            <div class="benefit-wrapper__content">
+              <ul>
+                <li>
+                  Любому бизнесу, работающему <br />
+                  с клиентской базой
+                </li>
+                <li>Бизнесу, управляющему ассортиментом</li>
+                <li>
+                  Бизнесу, где есть задачи, планирование, <br />
+                  отчетность и KPI
+                </li>
+              </ul>
+            </div>
+            <div class="benefit-wrapper__img img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/benefit-img.webp"
+                  type="image/webp"
+                />
+                <img class="lazy" data-src="images/benefit-img.png" alt="CRM" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="busines">
+        <div class="container">
+          <h2 class="page__subtitle caps">CRM В БИЗНЕСЕ</h2>
+          <p class="page__aftertitle">Наши кейсы</p>
+      
+          <div class="busines-wrapper">
+            <div class="busines-item">
+              <div class="busines-item__img">
+                <div class="img-wrap">
+                  <picture>
+                    <source
+                      data-srcset="images/busines-1.webp"
+                      type="image/webp"
+                      media="(min-width: 641px)"
+                    />
+                    <source
+                      data-srcset="images/busines-1.png"
+                      media="(min-width: 641px)"
+                    />
+                    <source
+                      class="lazy"
+                      data-src="images/busines-1-mobile.webp"
+                      type="image/webp"
+                      media="(max-width: 640px)"
+                    />
+                    <img
+                      class="lazy"
+                      data-src="images/busines-1-mobile.png"
+                      alt="Пестовский Лесокомбинат"
+                    />
+                  </picture>
+                </div>
+              </div>
+      
+              <div class="busines-item__content">
+                <p class="content-title">“Пестовский Лесокомбинат”</p>
+      
+                <p class="content-subtitle">Строительная компания</p>
+                <p class="content-descr">Работают на платформе amoCRM</p>
+      
+                <div class="content-button busines-button">Подробнее</div>
+              </div>
+            </div>
+      
+            <div class="busines-item">
+              <div class="busines-item__img">
+                <div class="img-wrap">
+                  <picture>
+                    <source
+                      data-srcset="images/busines-2.webp"
+                      type="image/webp"
+                      media="(min-width: 641px)"
+                    />
+                    <source
+                      data-srcset="images/busines-2.png"
+                      media="(min-width: 641px)"
+                    />
+                    <source
+                      class="lazy"
+                      data-src="images/busines-2-mobile.webp"
+                      type="image/webp"
+                      media="(max-width: 640px)"
+                    />
+                    <img
+                      class="lazy"
+                      data-src="images/busines-2-mobile.png"
+                      alt="Пестовский Лесокомбинат"
+                    />
+                  </picture>
+                </div>
+              </div>
+      
+              <div class="busines-item__content">
+                <p class="content-title">Магазин “Mongol Store”</p>
+      
+                <p class="content-subtitle">Одежда из натуральной шерсти</p>
+                <p class="content-descr">Используют БитриксCRM</p>
+      
+                <div class="content-button busines-button">Подробнее</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!--  -->
     <section class="coast">
       <div class="container">
@@ -800,6 +935,87 @@
                 />
               </svg>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="order">
+      <div class="container">
+        <h2 class="page__subtitle nocaps">
+          Заявка на подбор и подключение CRM-системы
+        </h2>
+        <p class="page__aftertitle">
+          Проведем аудит, подготовим решение для вашего <br />
+          бизнеса и рассчитаем стоимость
+        </p>
+        <div class="order-wrapper">
+          <div class="order-wrapper__content">
+            <p class="content-title">Заполните форму</p>
+            <p class="content-subtitle">
+              Оставьте свои контактные данные, <br />
+              мы свяжемся с Вами в течение 20 минут
+            </p>
+    
+            <div class="content-form">
+              <input
+                class="input-form"
+                type="name"
+                name="name"
+                autocomplete="off"
+                required
+                placeholder="Имя"
+              />
+    
+              <input
+                class="input-form"
+                type="text"
+                name="phone"
+                autocomplete="off"
+                placeholder="Телефон"
+              />
+    
+              <div class="drop-box">
+                <div class="input-form dropdown-toggle">
+                  <span> Выберите услугу </span>
+    
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.5 14.016L0 0.682617H25L12.5 14.016Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+    
+                <ul class="order-wrapper__content__dropdown dropdown">
+                  <li>Подключение</li>
+                  <li>Подключение + настройка</li>
+                  <li>Продление лицензий amoCRM или Битрикс24</li>
+                </ul>
+              </div>
+    
+              <button class="order-wrapper__button main-button">
+                ОТПРАВИТЬ ЗАЯВКУ
+              </button>
+            </div>
+          </div>
+          <div class="order-wrapper__img">
+            <div class="img-wrap">
+              <picture>
+                <source
+                  class="lazy"
+                  data-src="images/order-img.webp"
+                  type="image/webp"
+                />
+                <img class="lazy" data-src="images/order-img.png" alt="Заявка" />
+              </picture>
+            </div>
           </div>
         </div>
       </div>
@@ -961,7 +1177,571 @@
       </div>
     </div>
     <!--  -->
-
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__menu">
+            <h3 class="footer__title">Меню</h3>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="/services/">Услуги</a></li>
+    
+              <li class="footer__link"><a href="/cases/">Кейсы</a></li>
+    
+              <li class="footer__link"><a href="/other/">Ещё</a></li>
+            </ul>
+    
+            <div class="footer__dev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                id="Слой_1"
+                data-name="Слой 1"
+                width="996.47"
+                height="156.98"
+                viewBox="0 0 996.47 156.98"
+              >
+                <g>
+                  <defs>
+                    <linearGradient
+                      id="logo-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0"
+                    >
+                      <stop offset="0%" stop-color="#7A5FFF">
+                        <animate
+                          attributeName="stop-color"
+                          values="#7A5FFF; #00e824; #7A5FFF"
+                          dur="4s"
+                          repeatCount="indefinite"
+                        />
+                      </stop>
+    
+                      <stop offset="100%" stop-color="#00e824">
+                        <animate
+                          attributeName="stop-color"
+                          values="#00e824; #7A5FFF; #00e824"
+                          dur="3s"
+                          repeatCount="indefinite"
+                        />
+                      </stop>
+                    </linearGradient>
+                  </defs>
+                  <g>
+                    <path d="M-.3-18.5" transform="translate(-0.07 -3.39)" />
+                    <path
+                      fill="url(#logo-gradient)"
+                      d="M126.2,97l.5-1.5,11.1,34.2-1.2,1.9v-.1a2.09,2.09,0,0,1-.4.6C104,175,35.7,166.7,10.6,123.2-16.3,76.9,10.9,15.9,63.3,5A76.31,76.31,0,0,1,79.8,3.4c24.9,0,51,10.9,64.3,32.6L154.5,7.6l32.5.1L162.4,75.6l15.9,43.9a9.28,9.28,0,0,0,11.1,5.8l1.3-.4,8.6,29.2-10.4,2.7a30.51,30.51,0,0,1-35.7-18.1,75.9,75.9,0,0,1-3.7-8.2l-5.8-15.1-.3-.7v-.2l-13-39c-7-21.6-20.2-32-30.8-36.4a49.53,49.53,0,0,0-19.4-4c-26.7,0-48.3,21.3-48.3,47.6s21.6,47.6,48.3,47.6A48.24,48.24,0,0,0,126.2,97Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                  </g>
+                  <g fill="#ffffff">
+                    <g>
+                      <path
+                        d="M274.07,69H251.75L247.4,84H229.72l22.93-68.24h21.23L296.82,84H278.38Zm-19-12.49h15.56L263.1,30.24h-.38Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M302.68,12.37h16.75V84H302.68Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M376.69,37.76q5.58,7.1,5.58,19.91t-5.53,19.91q-5.49,7.14-15.37,7.14-11.87,0-16.12-9.7h-.33v25H328.17V31.38h16.65V40.6h.33a15.48,15.48,0,0,1,6.2-7.29,18.09,18.09,0,0,1,9.83-2.64Q371.16,30.67,376.69,37.76Zm-14.32,30q2.73-3.78,2.74-10.12t-2.74-10a9.09,9.09,0,0,0-14.76,0c-1.83,2.53-2.74,5.88-2.74,10.08s.91,7.58,2.74,10.07a9.15,9.15,0,0,0,14.76,0Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M389.32,12.37h16.41V41.26h.33q4.26-10.78,17-10.78,8.79,0,13.81,5.25t5,14.61V84H425.07V53.93a10.13,10.13,0,0,0-2.46-7.18,9,9,0,0,0-6.81-2.61,9.23,9.23,0,0,0-7,2.84,10.32,10.32,0,0,0-2.74,7.38V84H389.32Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M453.16,80.27A14.48,14.48,0,0,1,448,68.78Q448,54,469.29,52.66l12.34-.76v-3A6,6,0,0,0,479.5,44a8.66,8.66,0,0,0-5.67-1.71,9.28,9.28,0,0,0-5.58,1.61,6,6,0,0,0-2.51,4.07H450.66a16.1,16.1,0,0,1,6.81-12.82q6.52-4.86,17.16-4.87t16.93,4.87A15.44,15.44,0,0,1,498,48V84H481.73V76.44h-.33a14.5,14.5,0,0,1-6.48,6.1,19.9,19.9,0,0,1-9.18,2.18A18.36,18.36,0,0,1,453.16,80.27Zm25.49-9.41a7,7,0,0,0,3-5.81V61.41l-9.69.66q-7.38.51-7.38,5.58a4.73,4.73,0,0,0,1.94,4,8.19,8.19,0,0,0,5.15,1.47A11,11,0,0,0,478.65,70.86Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M525.94,31.38h16.27V41.5h.33a15.2,15.2,0,0,1,5.63-8,15.48,15.48,0,0,1,9.41-3,15.71,15.71,0,0,1,9.7,2.88,13.6,13.6,0,0,1,5,8.28h.33a14.9,14.9,0,0,1,6-8.14,17.92,17.92,0,0,1,10.31-3,16.64,16.64,0,0,1,12.49,4.92q4.77,5,4.77,13V84H589.36V52.61q0-8.52-7.57-8.51a7.08,7.08,0,0,0-5.62,2.36A9.12,9.12,0,0,0,574,52.8V84h-16V52.37a8.83,8.83,0,0,0-2-6.15,7.2,7.2,0,0,0-5.58-2.12,7.28,7.28,0,0,0-5.68,2.41,9.28,9.28,0,0,0-2.13,6.38V84H525.94Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M617.4,80.27a14.51,14.51,0,0,1-5.2-11.49q0-14.79,21.33-16.12l12.34-.76v-3A6,6,0,0,0,643.75,44a8.69,8.69,0,0,0-5.68-1.71,9.28,9.28,0,0,0-5.58,1.61A6,6,0,0,0,630,47.93H614.9a16.1,16.1,0,0,1,6.81-12.82q6.52-4.86,17.16-4.87t16.93,4.87A15.45,15.45,0,0,1,662.24,48V84H646V76.44h-.33a14.5,14.5,0,0,1-6.48,6.1A19.9,19.9,0,0,1,630,84.72,18.36,18.36,0,0,1,617.4,80.27Zm25.49-9.41a7,7,0,0,0,3-5.81V61.41l-9.69.66q-7.38.51-7.38,5.58a4.73,4.73,0,0,0,1.94,4,8.19,8.19,0,0,0,5.15,1.47A11,11,0,0,0,642.89,70.86Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M670.6,31.38h16.27v9.88h.33q2.89-10.59,12.44-10.59a13.48,13.48,0,0,1,4.26.66V45.71a13.37,13.37,0,0,0-5.39-1q-5.4,0-8.28,2.93c-1.92,2-2.88,4.82-2.88,8.51V84H670.6Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M742,31.38h18.73L741.83,53.93l20,30.08h-19.3L729.44,64l-3.22,3.73V84H709.48V12.37h16.74V51.52h.33Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M812.52,67.46a18.61,18.61,0,0,1-7.94,12.86q-6.76,4.83-17,4.82-12.48,0-19.58-7.23t-7.09-20q0-12.72,7.05-20.24t19-7.47q11.78,0,18.83,7.14t7,19.2v4.78H777.25v1a10.63,10.63,0,0,0,2.93,7.8,10.18,10.18,0,0,0,7.66,3q7.51,0,9.55-5.77Zm-32-22.61a10.53,10.53,0,0,0-3.08,6.91H797a10.32,10.32,0,0,0-2.88-7,9.51,9.51,0,0,0-6.86-2.6A9.29,9.29,0,0,0,780.51,44.85Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M840.52,19.74V31.38H850V43.77h-9.51V66.23q0,5.53,6.1,5.53a25.36,25.36,0,0,0,3.41-.23V83.44a34.09,34.09,0,0,1-7.38.66q-10.12,0-14.52-3.4t-4.35-11.11V43.77h-7V31.38h7V19.74Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M859.67,24.66a7.74,7.74,0,0,1-2.55-5.91,7.83,7.83,0,0,1,2.55-5.91,8.4,8.4,0,0,1,6.06-2.37,8.56,8.56,0,0,1,6.1,2.37,7.83,7.83,0,0,1,2.55,5.91,7.74,7.74,0,0,1-2.55,5.91,9,9,0,0,1-12.16,0Zm-2.31,6.72h16.78V84H857.36Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M882.66,31.38h16.26v9.88h.34Q903.61,30.48,916,30.48q8.81,0,13.81,5.25t5,14.56V84H918V53.89a10.13,10.13,0,0,0-2.36-7.14A8.7,8.7,0,0,0,909,44.14a9,9,0,0,0-6.9,2.84,10.3,10.3,0,0,0-2.65,7.33V84H882.66Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M950.19,99.19q-7.05-4.39-7.38-11.73h16.27a5.57,5.57,0,0,0,3.21,3.6,14,14,0,0,0,6.29,1.32,11.52,11.52,0,0,0,7.33-2.17,7.35,7.35,0,0,0,2.75-6v-10h-.33a13.13,13.13,0,0,1-5.92,6.72,19.63,19.63,0,0,1-10.12,2.55q-9.49,0-15.18-6.86t-5.77-19.1q0-12.54,5.68-19.68t15.56-7.18a18,18,0,0,1,9.88,2.74,15.31,15.31,0,0,1,6,7.19h.28V31.38h16.69V83A17.74,17.74,0,0,1,988,97.91q-7.42,5.64-19.72,5.63Q957.14,103.54,950.19,99.19ZM976,67.55q2.75-3.54,2.74-9.88T976,47.6a8.74,8.74,0,0,0-7.43-3.74,8.62,8.62,0,0,0-7.37,3.69q-2.75,3.73-2.75,10.07t2.7,9.93a9.63,9.63,0,0,0,14.85,0Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M251.5,133.18H236.65L232.73,144h-3.55l13.23-35.37h3.33L259,144h-3.53Zm-13.84-2.89H250.5l-6.35-17.5H244Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M283.54,144h-4.29l-12.94-12.92h-.15V144H263v-26.4h3.21V129.5h.15l12.62-11.89h4.12l-13.46,12.55Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M306.08,120.33h-9V144h-3.21V120.33h-9v-2.72h21.24Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M310.64,153v-2.76a7.27,7.27,0,0,0,1.6.17,4.1,4.1,0,0,0,2.91-1.06,8.81,8.81,0,0,0,2-3.53l.59-1.64-9.93-26.57h3.48l8.09,23.12h.07l8.11-23.12H331l-10.29,27.67q-1.71,4.66-3.48,6.28a7,7,0,0,1-4.95,1.64A6.72,6.72,0,0,1,310.64,153Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M335.74,142.2a7,7,0,0,1-2.45-5.54q0-6.89,9.7-7.58l8.12-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.15,7.15,0,0,0-4.95-1.59,7.54,7.54,0,0,0-4.59,1.33,5.7,5.7,0,0,0-2.25,3.7h-3.11a7.47,7.47,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18h-3.09v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.59,10.59,0,0,1-5.51,1.47A9.49,9.49,0,0,1,335.74,142.2Zm13-2.87a6.68,6.68,0,0,0,2.41-5.25v-2.91l-7.72.54q-6.79.43-6.79,5a4.19,4.19,0,0,0,1.71,3.46,7.12,7.12,0,0,0,4.46,1.32A8.55,8.55,0,0,0,348.7,139.33Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M364.54,141a5.55,5.55,0,0,1-5.22,3.23,4.28,4.28,0,0,1-1.47-.24v-3a4.16,4.16,0,0,0,1.32.2c1.29,0,2.27-.8,2.94-2.41a21.79,21.79,0,0,0,1.18-6.27q.56-5.88,1-14.93H381.2V144H378V120.33H367.23q-.39,7.56-.88,12.33C366.06,136.45,365.45,139.23,364.54,141Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M387.5,117.61h3.21v9h5.71a10,10,0,0,1,7,2.36,9,9,0,0,1,0,12.72,10,10,0,0,1-7,2.35H387.5Zm3.21,11.72v12h5.71a6.53,6.53,0,0,0,4.64-1.64,6.35,6.35,0,0,0,0-8.7,6.43,6.43,0,0,0-4.61-1.62Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M428.9,131.66H414.09V144h-3.21v-26.4h3.21v11.33H428.9V117.61h3.21V144H428.9Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M438.43,117.61h3.21v9h5.71a10,10,0,0,1,7,2.36,9,9,0,0,1,0,12.72,10,10,0,0,1-7,2.35h-8.92Zm3.21,11.72v12h5.71a6.48,6.48,0,0,0,4.63-1.64,6.33,6.33,0,0,0,0-8.7,6.43,6.43,0,0,0-4.61-1.62Zm19.22-11.72h3.21V144h-3.21Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M470.39,144v-26.4h3.21V139h.15l15-21.35H492V144h-3.21V122.66h-.18L473.6,144Zm6.13-37.5a5,5,0,0,0,1.32,3.58,4.75,4.75,0,0,0,3.58,1.4,4.67,4.67,0,0,0,3.55-1.4,5,5,0,0,0,1.33-3.58h2.47a6.66,6.66,0,0,1-2,5.07,8.32,8.32,0,0,1-10.68,0,6.61,6.61,0,0,1-2-5.07Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M509.38,144v-26.4h3.85l10.44,22.11h.15l10.41-22.11H538V144h-3.24V123.5h-.14l-9.66,20H522.4l-9.66-20h-.15V144Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M545.66,142.2a7,7,0,0,1-2.46-5.54q0-6.89,9.71-7.58l8.11-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.11,7.11,0,0,0-4.95-1.59,7.51,7.51,0,0,0-4.58,1.33,5.75,5.75,0,0,0-2.26,3.7h-3.11a7.48,7.48,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18h-3.09v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.6,10.6,0,0,1-5.52,1.47A9.46,9.46,0,0,1,545.66,142.2Zm13-2.87a6.7,6.7,0,0,0,2.4-5.25v-2.91l-7.72.54c-4.52.29-6.79,1.95-6.79,5a4.17,4.17,0,0,0,1.72,3.46,7.1,7.1,0,0,0,4.46,1.32A8.55,8.55,0,0,0,558.62,139.33Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M590.68,121a14.76,14.76,0,0,1,3.11,9.76,14.84,14.84,0,0,1-3.11,9.78,10,10,0,0,1-8.09,3.72,9.88,9.88,0,0,1-5.54-1.59,9,9,0,0,1-3.48-4.14h-.07v14.09h-3.24v-35h3.07v5.47h.07a8.88,8.88,0,0,1,3.53-4.14,10.67,10.67,0,0,1,13.75,2.1Zm-2.53,17.46a13.84,13.84,0,0,0,0-15.37,7.92,7.92,0,0,0-12.3,0,13.48,13.48,0,0,0,0,15.3,7.48,7.48,0,0,0,6.13,2.94A7.59,7.59,0,0,0,588.15,138.5Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M619.38,144h-4.29l-12.94-12.92H602V144h-3.21v-26.4H602V129.5h.15l12.62-11.89h4.12l-13.46,12.55Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M644,136.53a8.45,8.45,0,0,1-3.58,5.57,12,12,0,0,1-7.28,2.2,11.13,11.13,0,0,1-8.72-3.6q-3.24-3.63-3.24-9.83T624.4,121a10.81,10.81,0,0,1,8.56-3.7,10.58,10.58,0,0,1,8.3,3.48q3.09,3.51,3.09,9.39v1.42h-19.8v.17a10,10,0,0,0,2.38,7.06,8.06,8.06,0,0,0,6.29,2.6,8.73,8.73,0,0,0,5-1.38,6,6,0,0,0,2.6-3.53Zm-16.94-13.92a9.65,9.65,0,0,0-2.52,6.35H641a9.19,9.19,0,0,0-2.26-6.35,7.52,7.52,0,0,0-5.8-2.42A7.69,7.69,0,0,0,627.07,122.61Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M667.93,120.33h-9V144H655.7V120.33h-9v-2.72h21.25Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M672.07,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M718,131.66h-14.8V144h-3.21v-26.4h3.21v11.33H718V117.61h3.21V144H718Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M730.69,120.33V144h-3.21v-26.4h16.74v2.72Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M760.08,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M816.84,120.33H802.28V144h-3.21v-26.4h21V144h-3.21Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M846.79,121a14.71,14.71,0,0,1,3.11,9.76,14.78,14.78,0,0,1-3.11,9.78,10,10,0,0,1-8.09,3.72,9.84,9.84,0,0,1-5.53-1.59,9.12,9.12,0,0,1-3.49-4.14h-.07v14.09h-3.23v-35h3.06v5.47h.07a8.94,8.94,0,0,1,3.53-4.14,10.67,10.67,0,0,1,13.75,2.1Zm-2.52,17.46a13.84,13.84,0,0,0,0-15.37,7.93,7.93,0,0,0-12.31,0,13.53,13.53,0,0,0,0,15.3,7.5,7.5,0,0,0,6.13,2.94A7.61,7.61,0,0,0,844.27,138.5Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M856.87,140.63q-3.29-3.66-3.29-9.83t3.29-9.83a12.22,12.22,0,0,1,17.42,0q3.29,3.68,3.29,9.83t-3.29,9.83a12.17,12.17,0,0,1-17.42,0Zm15.07-2.06a11.94,11.94,0,0,0,2.33-7.77,11.94,11.94,0,0,0-2.33-7.77,8.58,8.58,0,0,0-12.72,0,11.94,11.94,0,0,0-2.33,7.77,11.94,11.94,0,0,0,2.33,7.77,8.58,8.58,0,0,0,12.72,0Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M879.88,151v-9.71H882q2.64-1.71,3.21-8.75.74-9.07,1-14.93h17.6v23.68h4.26V151h-3v-7H882.92v7Zm20.73-30.67H889.14c-.24,4.68-.55,8.79-.9,12.33-.35,4.14-1.14,7-2.38,8.48v.15h14.75Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M913.48,142.2a7,7,0,0,1-2.45-5.54q0-6.89,9.7-7.58l8.12-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.15,7.15,0,0,0-5-1.59,7.54,7.54,0,0,0-4.59,1.33,5.7,5.7,0,0,0-2.25,3.7h-3.11a7.47,7.47,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18H929v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.59,10.59,0,0,1-5.51,1.47A9.49,9.49,0,0,1,913.48,142.2Zm13-2.87a6.68,6.68,0,0,0,2.41-5.25v-2.91l-7.72.54q-6.79.43-6.79,5a4.19,4.19,0,0,0,1.71,3.46,7.12,7.12,0,0,0,4.46,1.32A8.55,8.55,0,0,0,926.44,139.33Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M971.17,144h-4.26l-11.84-12.92h-.15V144h-3.21V131.09h-.14L939.73,144h-4.17l12.77-13.77L936,117.61h4.1l11.52,11.89h.14V117.61h3.21V129.5h.15l11.52-11.89h4.07l-12.33,12.55Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                      <path
+                        d="M975,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                        transform="translate(-0.07 -3.39)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <a href="/" class="footer__title">Контакты</a>
+            <p class="footer__address">
+              Санкт-Петербург<br />
+              Заозёрная 8, к.2, офис 202
+            </p>
+            <p class="footer__time">Пн-Пт, 10:00 - 18:00</p>
+            <p class="footer__phone">
+              <a href="tel:+78124095222">8 (812) 409-52-22</a>
+            </p>
+            <p class="footer__email">
+              <a href="mailto:info@alpham.pro">info@alpham.pro</a>
+            </p>
+    
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link tg" href="https://t.me/alpham_pro"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="21"
+                    viewBox="0 0 27 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M26.3731 1.36904C26.5548 0.587662 26.3731 0.0146484 25.5142 0.0146484H22.6687C21.9447 0.0146484 21.6139 0.510364 21.4322 1.05481C21.4322 1.05481 19.9855 5.62379 17.9354 8.58632C17.2737 9.44836 16.9714 9.72058 16.6107 9.72058C16.4303 9.72058 16.1682 9.44836 16.1682 8.66698V1.36904C16.1682 0.431385 15.9593 0.0146484 15.356 0.0146484H10.8848C10.4332 0.0146484 10.1608 0.448189 10.1608 0.861565C10.1608 1.74881 11.1858 1.95382 11.2909 4.45424V9.87854C11.2909 11.0666 11.1261 11.2833 10.7628 11.2833C9.79877 11.2833 7.45287 6.69756 6.06065 1.44802C5.78947 0.428025 5.5157 0.0163295 4.7891 0.0163295H1.94496C1.13143 0.0163295 0.969238 0.512044 0.969238 1.05649C0.969238 2.03448 1.93329 6.874 5.45991 13.2746C7.81099 17.6453 11.1209 20.0146 14.1363 20.0146C15.9438 20.0146 16.1669 19.4887 16.1669 18.5813V15.2776C16.1669 14.2257 16.3395 14.014 16.9117 14.014C17.3321 14.014 18.0561 14.2896 19.7441 16.3951C21.6722 18.8921 21.9914 20.013 23.0748 20.013H25.919C26.7312 20.013 27.1373 19.487 26.9038 18.4485C26.6482 17.4151 25.7269 15.9111 24.5047 14.1316C23.8404 13.1166 22.8478 12.0244 22.5455 11.4783C22.1238 10.7742 22.2457 10.4633 22.5455 9.83821C22.5468 9.83989 26.0124 3.51826 26.3731 1.36904Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link vk"
+                  href="https://vk.com/alpha_marketing_alpham_pro"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="21"
+                    viewBox="0 0 27 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M25.2143 0.146153L2.18328 8.29201C0.611506 8.87105 0.620599 9.67527 1.8949 10.0339L7.80788 11.7257L21.4888 3.80863C22.1357 3.44763 22.7267 3.64183 22.2409 4.03739L11.1567 13.2127H11.1541L11.1567 13.2138L10.7488 18.8041C11.3463 18.8041 11.61 18.5527 11.9451 18.256L14.8172 15.6944L20.7912 19.7417C21.8928 20.2981 22.6839 20.0122 22.9579 18.8065L26.8796 1.85468C27.281 0.378484 26.2652 -0.289913 25.2143 0.146153Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="footer__map img-wrap">
+            <picture>
+              <source
+                class="lazy"
+                data-src="images/footer-img.webp"
+                type="image/webp"
+              />
+              <img class="lazy" data-src="images/footer-img.png" alt="карта" />
+            </picture>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__dev footer__dev-mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="Слой_1"
+              data-name="Слой 1"
+              width="996.47"
+              height="156.98"
+              viewBox="0 0 996.47 156.98"
+            >
+              <g>
+                <defs>
+                  <linearGradient
+                    id="logo-gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0"
+                  >
+                    <stop offset="0%" stop-color="#7A5FFF">
+                      <animate
+                        attributeName="stop-color"
+                        values="#7A5FFF; #00e824; #7A5FFF"
+                        dur="4s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+    
+                    <stop offset="100%" stop-color="#00e824">
+                      <animate
+                        attributeName="stop-color"
+                        values="#00e824; #7A5FFF; #00e824"
+                        dur="3s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                  </linearGradient>
+                </defs>
+                <g>
+                  <path d="M-.3-18.5" transform="translate(-0.07 -3.39)" />
+                  <path
+                    fill="url(#logo-gradient)"
+                    d="M126.2,97l.5-1.5,11.1,34.2-1.2,1.9v-.1a2.09,2.09,0,0,1-.4.6C104,175,35.7,166.7,10.6,123.2-16.3,76.9,10.9,15.9,63.3,5A76.31,76.31,0,0,1,79.8,3.4c24.9,0,51,10.9,64.3,32.6L154.5,7.6l32.5.1L162.4,75.6l15.9,43.9a9.28,9.28,0,0,0,11.1,5.8l1.3-.4,8.6,29.2-10.4,2.7a30.51,30.51,0,0,1-35.7-18.1,75.9,75.9,0,0,1-3.7-8.2l-5.8-15.1-.3-.7v-.2l-13-39c-7-21.6-20.2-32-30.8-36.4a49.53,49.53,0,0,0-19.4-4c-26.7,0-48.3,21.3-48.3,47.6s21.6,47.6,48.3,47.6A48.24,48.24,0,0,0,126.2,97Z"
+                    transform="translate(-0.07 -3.39)"
+                  />
+                </g>
+                <g fill="#ffffff">
+                  <g>
+                    <path
+                      d="M274.07,69H251.75L247.4,84H229.72l22.93-68.24h21.23L296.82,84H278.38Zm-19-12.49h15.56L263.1,30.24h-.38Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M302.68,12.37h16.75V84H302.68Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M376.69,37.76q5.58,7.1,5.58,19.91t-5.53,19.91q-5.49,7.14-15.37,7.14-11.87,0-16.12-9.7h-.33v25H328.17V31.38h16.65V40.6h.33a15.48,15.48,0,0,1,6.2-7.29,18.09,18.09,0,0,1,9.83-2.64Q371.16,30.67,376.69,37.76Zm-14.32,30q2.73-3.78,2.74-10.12t-2.74-10a9.09,9.09,0,0,0-14.76,0c-1.83,2.53-2.74,5.88-2.74,10.08s.91,7.58,2.74,10.07a9.15,9.15,0,0,0,14.76,0Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M389.32,12.37h16.41V41.26h.33q4.26-10.78,17-10.78,8.79,0,13.81,5.25t5,14.61V84H425.07V53.93a10.13,10.13,0,0,0-2.46-7.18,9,9,0,0,0-6.81-2.61,9.23,9.23,0,0,0-7,2.84,10.32,10.32,0,0,0-2.74,7.38V84H389.32Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M453.16,80.27A14.48,14.48,0,0,1,448,68.78Q448,54,469.29,52.66l12.34-.76v-3A6,6,0,0,0,479.5,44a8.66,8.66,0,0,0-5.67-1.71,9.28,9.28,0,0,0-5.58,1.61,6,6,0,0,0-2.51,4.07H450.66a16.1,16.1,0,0,1,6.81-12.82q6.52-4.86,17.16-4.87t16.93,4.87A15.44,15.44,0,0,1,498,48V84H481.73V76.44h-.33a14.5,14.5,0,0,1-6.48,6.1,19.9,19.9,0,0,1-9.18,2.18A18.36,18.36,0,0,1,453.16,80.27Zm25.49-9.41a7,7,0,0,0,3-5.81V61.41l-9.69.66q-7.38.51-7.38,5.58a4.73,4.73,0,0,0,1.94,4,8.19,8.19,0,0,0,5.15,1.47A11,11,0,0,0,478.65,70.86Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M525.94,31.38h16.27V41.5h.33a15.2,15.2,0,0,1,5.63-8,15.48,15.48,0,0,1,9.41-3,15.71,15.71,0,0,1,9.7,2.88,13.6,13.6,0,0,1,5,8.28h.33a14.9,14.9,0,0,1,6-8.14,17.92,17.92,0,0,1,10.31-3,16.64,16.64,0,0,1,12.49,4.92q4.77,5,4.77,13V84H589.36V52.61q0-8.52-7.57-8.51a7.08,7.08,0,0,0-5.62,2.36A9.12,9.12,0,0,0,574,52.8V84h-16V52.37a8.83,8.83,0,0,0-2-6.15,7.2,7.2,0,0,0-5.58-2.12,7.28,7.28,0,0,0-5.68,2.41,9.28,9.28,0,0,0-2.13,6.38V84H525.94Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M617.4,80.27a14.51,14.51,0,0,1-5.2-11.49q0-14.79,21.33-16.12l12.34-.76v-3A6,6,0,0,0,643.75,44a8.69,8.69,0,0,0-5.68-1.71,9.28,9.28,0,0,0-5.58,1.61A6,6,0,0,0,630,47.93H614.9a16.1,16.1,0,0,1,6.81-12.82q6.52-4.86,17.16-4.87t16.93,4.87A15.45,15.45,0,0,1,662.24,48V84H646V76.44h-.33a14.5,14.5,0,0,1-6.48,6.1A19.9,19.9,0,0,1,630,84.72,18.36,18.36,0,0,1,617.4,80.27Zm25.49-9.41a7,7,0,0,0,3-5.81V61.41l-9.69.66q-7.38.51-7.38,5.58a4.73,4.73,0,0,0,1.94,4,8.19,8.19,0,0,0,5.15,1.47A11,11,0,0,0,642.89,70.86Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M670.6,31.38h16.27v9.88h.33q2.89-10.59,12.44-10.59a13.48,13.48,0,0,1,4.26.66V45.71a13.37,13.37,0,0,0-5.39-1q-5.4,0-8.28,2.93c-1.92,2-2.88,4.82-2.88,8.51V84H670.6Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M742,31.38h18.73L741.83,53.93l20,30.08h-19.3L729.44,64l-3.22,3.73V84H709.48V12.37h16.74V51.52h.33Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M812.52,67.46a18.61,18.61,0,0,1-7.94,12.86q-6.76,4.83-17,4.82-12.48,0-19.58-7.23t-7.09-20q0-12.72,7.05-20.24t19-7.47q11.78,0,18.83,7.14t7,19.2v4.78H777.25v1a10.63,10.63,0,0,0,2.93,7.8,10.18,10.18,0,0,0,7.66,3q7.51,0,9.55-5.77Zm-32-22.61a10.53,10.53,0,0,0-3.08,6.91H797a10.32,10.32,0,0,0-2.88-7,9.51,9.51,0,0,0-6.86-2.6A9.29,9.29,0,0,0,780.51,44.85Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M840.52,19.74V31.38H850V43.77h-9.51V66.23q0,5.53,6.1,5.53a25.36,25.36,0,0,0,3.41-.23V83.44a34.09,34.09,0,0,1-7.38.66q-10.12,0-14.52-3.4t-4.35-11.11V43.77h-7V31.38h7V19.74Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M859.67,24.66a7.74,7.74,0,0,1-2.55-5.91,7.83,7.83,0,0,1,2.55-5.91,8.4,8.4,0,0,1,6.06-2.37,8.56,8.56,0,0,1,6.1,2.37,7.83,7.83,0,0,1,2.55,5.91,7.74,7.74,0,0,1-2.55,5.91,9,9,0,0,1-12.16,0Zm-2.31,6.72h16.78V84H857.36Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M882.66,31.38h16.26v9.88h.34Q903.61,30.48,916,30.48q8.81,0,13.81,5.25t5,14.56V84H918V53.89a10.13,10.13,0,0,0-2.36-7.14A8.7,8.7,0,0,0,909,44.14a9,9,0,0,0-6.9,2.84,10.3,10.3,0,0,0-2.65,7.33V84H882.66Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M950.19,99.19q-7.05-4.39-7.38-11.73h16.27a5.57,5.57,0,0,0,3.21,3.6,14,14,0,0,0,6.29,1.32,11.52,11.52,0,0,0,7.33-2.17,7.35,7.35,0,0,0,2.75-6v-10h-.33a13.13,13.13,0,0,1-5.92,6.72,19.63,19.63,0,0,1-10.12,2.55q-9.49,0-15.18-6.86t-5.77-19.1q0-12.54,5.68-19.68t15.56-7.18a18,18,0,0,1,9.88,2.74,15.31,15.31,0,0,1,6,7.19h.28V31.38h16.69V83A17.74,17.74,0,0,1,988,97.91q-7.42,5.64-19.72,5.63Q957.14,103.54,950.19,99.19ZM976,67.55q2.75-3.54,2.74-9.88T976,47.6a8.74,8.74,0,0,0-7.43-3.74,8.62,8.62,0,0,0-7.37,3.69q-2.75,3.73-2.75,10.07t2.7,9.93a9.63,9.63,0,0,0,14.85,0Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      d="M251.5,133.18H236.65L232.73,144h-3.55l13.23-35.37h3.33L259,144h-3.53Zm-13.84-2.89H250.5l-6.35-17.5H244Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M283.54,144h-4.29l-12.94-12.92h-.15V144H263v-26.4h3.21V129.5h.15l12.62-11.89h4.12l-13.46,12.55Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M306.08,120.33h-9V144h-3.21V120.33h-9v-2.72h21.24Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M310.64,153v-2.76a7.27,7.27,0,0,0,1.6.17,4.1,4.1,0,0,0,2.91-1.06,8.81,8.81,0,0,0,2-3.53l.59-1.64-9.93-26.57h3.48l8.09,23.12h.07l8.11-23.12H331l-10.29,27.67q-1.71,4.66-3.48,6.28a7,7,0,0,1-4.95,1.64A6.72,6.72,0,0,1,310.64,153Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M335.74,142.2a7,7,0,0,1-2.45-5.54q0-6.89,9.7-7.58l8.12-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.15,7.15,0,0,0-4.95-1.59,7.54,7.54,0,0,0-4.59,1.33,5.7,5.7,0,0,0-2.25,3.7h-3.11a7.47,7.47,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18h-3.09v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.59,10.59,0,0,1-5.51,1.47A9.49,9.49,0,0,1,335.74,142.2Zm13-2.87a6.68,6.68,0,0,0,2.41-5.25v-2.91l-7.72.54q-6.79.43-6.79,5a4.19,4.19,0,0,0,1.71,3.46,7.12,7.12,0,0,0,4.46,1.32A8.55,8.55,0,0,0,348.7,139.33Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M364.54,141a5.55,5.55,0,0,1-5.22,3.23,4.28,4.28,0,0,1-1.47-.24v-3a4.16,4.16,0,0,0,1.32.2c1.29,0,2.27-.8,2.94-2.41a21.79,21.79,0,0,0,1.18-6.27q.56-5.88,1-14.93H381.2V144H378V120.33H367.23q-.39,7.56-.88,12.33C366.06,136.45,365.45,139.23,364.54,141Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M387.5,117.61h3.21v9h5.71a10,10,0,0,1,7,2.36,9,9,0,0,1,0,12.72,10,10,0,0,1-7,2.35H387.5Zm3.21,11.72v12h5.71a6.53,6.53,0,0,0,4.64-1.64,6.35,6.35,0,0,0,0-8.7,6.43,6.43,0,0,0-4.61-1.62Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M428.9,131.66H414.09V144h-3.21v-26.4h3.21v11.33H428.9V117.61h3.21V144H428.9Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M438.43,117.61h3.21v9h5.71a10,10,0,0,1,7,2.36,9,9,0,0,1,0,12.72,10,10,0,0,1-7,2.35h-8.92Zm3.21,11.72v12h5.71a6.48,6.48,0,0,0,4.63-1.64,6.33,6.33,0,0,0,0-8.7,6.43,6.43,0,0,0-4.61-1.62Zm19.22-11.72h3.21V144h-3.21Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M470.39,144v-26.4h3.21V139h.15l15-21.35H492V144h-3.21V122.66h-.18L473.6,144Zm6.13-37.5a5,5,0,0,0,1.32,3.58,4.75,4.75,0,0,0,3.58,1.4,4.67,4.67,0,0,0,3.55-1.4,5,5,0,0,0,1.33-3.58h2.47a6.66,6.66,0,0,1-2,5.07,8.32,8.32,0,0,1-10.68,0,6.61,6.61,0,0,1-2-5.07Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M509.38,144v-26.4h3.85l10.44,22.11h.15l10.41-22.11H538V144h-3.24V123.5h-.14l-9.66,20H522.4l-9.66-20h-.15V144Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M545.66,142.2a7,7,0,0,1-2.46-5.54q0-6.89,9.71-7.58l8.11-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.11,7.11,0,0,0-4.95-1.59,7.51,7.51,0,0,0-4.58,1.33,5.75,5.75,0,0,0-2.26,3.7h-3.11a7.48,7.48,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18h-3.09v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.6,10.6,0,0,1-5.52,1.47A9.46,9.46,0,0,1,545.66,142.2Zm13-2.87a6.7,6.7,0,0,0,2.4-5.25v-2.91l-7.72.54c-4.52.29-6.79,1.95-6.79,5a4.17,4.17,0,0,0,1.72,3.46,7.1,7.1,0,0,0,4.46,1.32A8.55,8.55,0,0,0,558.62,139.33Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M590.68,121a14.76,14.76,0,0,1,3.11,9.76,14.84,14.84,0,0,1-3.11,9.78,10,10,0,0,1-8.09,3.72,9.88,9.88,0,0,1-5.54-1.59,9,9,0,0,1-3.48-4.14h-.07v14.09h-3.24v-35h3.07v5.47h.07a8.88,8.88,0,0,1,3.53-4.14,10.67,10.67,0,0,1,13.75,2.1Zm-2.53,17.46a13.84,13.84,0,0,0,0-15.37,7.92,7.92,0,0,0-12.3,0,13.48,13.48,0,0,0,0,15.3,7.48,7.48,0,0,0,6.13,2.94A7.59,7.59,0,0,0,588.15,138.5Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M619.38,144h-4.29l-12.94-12.92H602V144h-3.21v-26.4H602V129.5h.15l12.62-11.89h4.12l-13.46,12.55Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M644,136.53a8.45,8.45,0,0,1-3.58,5.57,12,12,0,0,1-7.28,2.2,11.13,11.13,0,0,1-8.72-3.6q-3.24-3.63-3.24-9.83T624.4,121a10.81,10.81,0,0,1,8.56-3.7,10.58,10.58,0,0,1,8.3,3.48q3.09,3.51,3.09,9.39v1.42h-19.8v.17a10,10,0,0,0,2.38,7.06,8.06,8.06,0,0,0,6.29,2.6,8.73,8.73,0,0,0,5-1.38,6,6,0,0,0,2.6-3.53Zm-16.94-13.92a9.65,9.65,0,0,0-2.52,6.35H641a9.19,9.19,0,0,0-2.26-6.35,7.52,7.52,0,0,0-5.8-2.42A7.69,7.69,0,0,0,627.07,122.61Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M667.93,120.33h-9V144H655.7V120.33h-9v-2.72h21.25Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M672.07,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M718,131.66h-14.8V144h-3.21v-26.4h3.21v11.33H718V117.61h3.21V144H718Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M730.69,120.33V144h-3.21v-26.4h16.74v2.72Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M760.08,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M816.84,120.33H802.28V144h-3.21v-26.4h21V144h-3.21Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M846.79,121a14.71,14.71,0,0,1,3.11,9.76,14.78,14.78,0,0,1-3.11,9.78,10,10,0,0,1-8.09,3.72,9.84,9.84,0,0,1-5.53-1.59,9.12,9.12,0,0,1-3.49-4.14h-.07v14.09h-3.23v-35h3.06v5.47h.07a8.94,8.94,0,0,1,3.53-4.14,10.67,10.67,0,0,1,13.75,2.1Zm-2.52,17.46a13.84,13.84,0,0,0,0-15.37,7.93,7.93,0,0,0-12.31,0,13.53,13.53,0,0,0,0,15.3,7.5,7.5,0,0,0,6.13,2.94A7.61,7.61,0,0,0,844.27,138.5Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M856.87,140.63q-3.29-3.66-3.29-9.83t3.29-9.83a12.22,12.22,0,0,1,17.42,0q3.29,3.68,3.29,9.83t-3.29,9.83a12.17,12.17,0,0,1-17.42,0Zm15.07-2.06a11.94,11.94,0,0,0,2.33-7.77,11.94,11.94,0,0,0-2.33-7.77,8.58,8.58,0,0,0-12.72,0,11.94,11.94,0,0,0-2.33,7.77,11.94,11.94,0,0,0,2.33,7.77,8.58,8.58,0,0,0,12.72,0Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M879.88,151v-9.71H882q2.64-1.71,3.21-8.75.74-9.07,1-14.93h17.6v23.68h4.26V151h-3v-7H882.92v7Zm20.73-30.67H889.14c-.24,4.68-.55,8.79-.9,12.33-.35,4.14-1.14,7-2.38,8.48v.15h14.75Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M913.48,142.2a7,7,0,0,1-2.45-5.54q0-6.89,9.7-7.58l8.12-.54v-2.25a5.79,5.79,0,0,0-1.74-4.49,7.15,7.15,0,0,0-5-1.59,7.54,7.54,0,0,0-4.59,1.33,5.7,5.7,0,0,0-2.25,3.7h-3.11a7.47,7.47,0,0,1,3-5.69,10.78,10.78,0,0,1,7-2.23,10.61,10.61,0,0,1,7.23,2.35,8,8,0,0,1,2.67,6.35v18H929v-5h-.07a8.59,8.59,0,0,1-3.53,3.87,10.59,10.59,0,0,1-5.51,1.47A9.49,9.49,0,0,1,913.48,142.2Zm13-2.87a6.68,6.68,0,0,0,2.41-5.25v-2.91l-7.72.54q-6.79.43-6.79,5a4.19,4.19,0,0,0,1.71,3.46,7.12,7.12,0,0,0,4.46,1.32A8.55,8.55,0,0,0,926.44,139.33Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M971.17,144h-4.26l-11.84-12.92h-.15V144h-3.21V131.09h-.14L939.73,144h-4.17l12.77-13.77L936,117.61h4.1l11.52,11.89h.14V117.61h3.21V129.5h.15l11.52-11.89h4.07l-12.33,12.55Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                    <path
+                      d="M975,144v-26.4h3.21V139h.15l15-21.35h3.21V144h-3.21V122.66h-.17l-15,21.35Z"
+                      transform="translate(-0.07 -3.39)"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+    
+          <ul class="footer__social-list footer__social-list-mobile">
+            <li class="footer__social-item">
+              <a class="footer__social-link tg" href="https://t.me/alpham_pro"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="21"
+                  viewBox="0 0 27 21"
+                  fill="none"
+                >
+                  <path
+                    d="M26.3731 1.36904C26.5548 0.587662 26.3731 0.0146484 25.5142 0.0146484H22.6687C21.9447 0.0146484 21.6139 0.510364 21.4322 1.05481C21.4322 1.05481 19.9855 5.62379 17.9354 8.58632C17.2737 9.44836 16.9714 9.72058 16.6107 9.72058C16.4303 9.72058 16.1682 9.44836 16.1682 8.66698V1.36904C16.1682 0.431385 15.9593 0.0146484 15.356 0.0146484H10.8848C10.4332 0.0146484 10.1608 0.448189 10.1608 0.861565C10.1608 1.74881 11.1858 1.95382 11.2909 4.45424V9.87854C11.2909 11.0666 11.1261 11.2833 10.7628 11.2833C9.79877 11.2833 7.45287 6.69756 6.06065 1.44802C5.78947 0.428025 5.5157 0.0163295 4.7891 0.0163295H1.94496C1.13143 0.0163295 0.969238 0.512044 0.969238 1.05649C0.969238 2.03448 1.93329 6.874 5.45991 13.2746C7.81099 17.6453 11.1209 20.0146 14.1363 20.0146C15.9438 20.0146 16.1669 19.4887 16.1669 18.5813V15.2776C16.1669 14.2257 16.3395 14.014 16.9117 14.014C17.3321 14.014 18.0561 14.2896 19.7441 16.3951C21.6722 18.8921 21.9914 20.013 23.0748 20.013H25.919C26.7312 20.013 27.1373 19.487 26.9038 18.4485C26.6482 17.4151 25.7269 15.9111 24.5047 14.1316C23.8404 13.1166 22.8478 12.0244 22.5455 11.4783C22.1238 10.7742 22.2457 10.4633 22.5455 9.83821C22.5468 9.83989 26.0124 3.51826 26.3731 1.36904Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link vk"
+                href="https://vk.com/alpha_marketing_alpham_pro"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="21"
+                  viewBox="0 0 27 21"
+                  fill="none"
+                >
+                  <path
+                    d="M25.2143 0.146153L2.18328 8.29201C0.611506 8.87105 0.620599 9.67527 1.8949 10.0339L7.80788 11.7257L21.4888 3.80863C22.1357 3.44763 22.7267 3.64183 22.2409 4.03739L11.1567 13.2127H11.1541L11.1567 13.2138L10.7488 18.8041C11.3463 18.8041 11.61 18.5527 11.9451 18.256L14.8172 15.6944L20.7912 19.7417C21.8928 20.2981 22.6839 20.0122 22.9579 18.8065L26.8796 1.85468C27.281 0.378484 26.2652 -0.289913 25.2143 0.146153Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+    
+          <p class="footer__copyright">
+            © 2024 Альфа маркетинг<a href="/privacy-policy.php"
+              >Политика конфиденциальности</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
