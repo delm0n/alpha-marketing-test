@@ -22,7 +22,7 @@ const paths = {
 
   css: {
     src: "src/scss/main.scss",
-    dest: "style/",
+    dest: "docs/style/",
   },
 
   img: {
@@ -70,7 +70,7 @@ function cssTask() {
 }
 
 function docsClean() {
-  return gulp.src("docs/*", { read: false }).pipe(clean());
+  return gulp.src("docs/images/*", { read: false }).pipe(clean());
 }
 
 // запуск задач при изменении файлов
@@ -81,6 +81,7 @@ gulp.task("watch", function () {
 });
 
 exports.build = series(
-  docsClean,
-  parallel(imgTask, webpTask, htmlTask, cssTask)
+  // docsClean,
+  // parallel(imgTask, webpTask, htmlTask, cssTask)
+  parallel(htmlTask, cssTask)
 );
