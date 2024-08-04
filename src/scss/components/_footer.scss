@@ -1,5 +1,9 @@
 .footer {
-  @extend %pb;
+  padding-bottom: 50px;
+
+  @media (min-width: 641px) {
+    padding-bottom: 100px;
+  }
 
   @media (max-width: 980px) {
     max-width: 690px;
