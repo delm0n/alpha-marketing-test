@@ -43,7 +43,9 @@ function imgTask() {
     .pipe(gulp.dest(paths.img.dest));
 }
 function webpTask() {
-  return src(paths.img.src).pipe(webp()).pipe(gulp.dest(paths.img.dest));
+  return src(paths.img.src)
+    .pipe(webp({ quality: 80 }))
+    .pipe(gulp.dest(paths.img.dest));
 }
 
 //сборка html
@@ -56,7 +58,6 @@ function cssTask() {
   return src(paths.css.src)
     .pipe(sass())
     .pipe(gcmq())
-
     .pipe(
       cleancss({
         level: {
@@ -81,7 +82,7 @@ gulp.task("watch", function () {
 });
 
 exports.build = series(
-  // docsClean,
+  docsClean,
   // parallel(imgTask, webpTask, htmlTask, cssTask)
   parallel(htmlTask, cssTask)
 );

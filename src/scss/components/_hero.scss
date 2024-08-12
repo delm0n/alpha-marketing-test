@@ -66,7 +66,9 @@
   }
 
   .hero__img {
-    max-width: 704.88px;
+    max-width: 705px;
     margin: 0 auto;
+    aspect-ratio: 705/557;
+    width: 100%;
   }
 }
